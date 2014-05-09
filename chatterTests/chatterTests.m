@@ -6,7 +6,9 @@
 //  Copyright (c) 2014 Universität Heidelberg. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+#import "CHTRChatter.h"
+#import "CHTRMessage.h"
 
 @interface chatterTests : XCTestCase
 
@@ -26,9 +28,21 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testConversation
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    CHTRChatter *leftChatter = [[CHTRChatter alloc] init];
+    CHTRChatter *rightChatter = [[CHTRChatter alloc] init];
+    leftChatter.partner = rightChatter;
+    rightChatter.partner = leftChatter;
+    
+    CHTRChatter *chatter = leftChatter;
+    CHTRMessage *message = nil;
+    while ((message = [chatter nextMessage])) {
+        NSLog(message.text, nil);
+        NSLog([chatter.partner responseForMessage:message].text, nil);
+        chatter = chatter.partner;
+        sleep(3);
+    }
 }
 
 @end

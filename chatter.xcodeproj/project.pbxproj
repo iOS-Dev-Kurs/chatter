@@ -14,7 +14,6 @@
 		8739C1C9191C1203009C7B3B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1C8191C1203009C7B3B /* main.m */; };
 		8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1CC191C1203009C7B3B /* CHTRAppDelegate.m */; };
 		8739C1D0191C1203009C7B3B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1CE191C1203009C7B3B /* Main_iPhone.storyboard */; };
-		8739C1D3191C1203009C7B3B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1D1191C1203009C7B3B /* Main_iPad.storyboard */; };
 		8739C1D6191C1203009C7B3B /* CHTRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1D5191C1203009C7B3B /* CHTRViewController.m */; };
 		8739C1D8191C1203009C7B3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1D7191C1203009C7B3B /* Images.xcassets */; };
 		8739C1DF191C1203009C7B3B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1DE191C1203009C7B3B /* XCTest.framework */; };
@@ -22,6 +21,16 @@
 		8739C1E1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
 		8739C1E9191C1203009C7B3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1E7191C1203009C7B3B /* InfoPlist.strings */; };
 		8739C1EB191C1203009C7B3B /* chatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1EA191C1203009C7B3B /* chatterTests.m */; };
+		8739C1F6191C1235009C7B3B /* CHTRChatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1F5191C1235009C7B3B /* CHTRChatter.m */; };
+		8739C1FA191C1388009C7B3B /* CHTRChatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1F5191C1235009C7B3B /* CHTRChatter.m */; };
+		8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1FC191C16AE009C7B3B /* CHTRMessage.m */; };
+		8739C1FE191C16AE009C7B3B /* CHTRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1FC191C16AE009C7B3B /* CHTRMessage.m */; };
+		8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C200191C24EA009C7B3B /* NSArray+CHTRRandomObject.m */; };
+		8739C202191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C200191C24EA009C7B3B /* NSArray+CHTRRandomObject.m */; };
+		8739C206191C325C009C7B3B /* Yoda.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C205191C325C009C7B3B /* Yoda.m */; };
+		8739C207191C325C009C7B3B /* Yoda.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C205191C325C009C7B3B /* Yoda.m */; };
+		8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
+		8739C20B191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +55,6 @@
 		8739C1CB191C1203009C7B3B /* CHTRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTRAppDelegate.h; sourceTree = "<group>"; };
 		8739C1CC191C1203009C7B3B /* CHTRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTRAppDelegate.m; sourceTree = "<group>"; };
 		8739C1CF191C1203009C7B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		8739C1D2191C1203009C7B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		8739C1D4191C1203009C7B3B /* CHTRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHTRViewController.h; sourceTree = "<group>"; };
 		8739C1D5191C1203009C7B3B /* CHTRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHTRViewController.m; sourceTree = "<group>"; };
 		8739C1D7191C1203009C7B3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +63,16 @@
 		8739C1E6191C1203009C7B3B /* chatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatterTests-Info.plist"; sourceTree = "<group>"; };
 		8739C1E8191C1203009C7B3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8739C1EA191C1203009C7B3B /* chatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatterTests.m; sourceTree = "<group>"; };
+		8739C1F4191C1235009C7B3B /* CHTRChatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTRChatter.h; sourceTree = "<group>"; };
+		8739C1F5191C1235009C7B3B /* CHTRChatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRChatter.m; sourceTree = "<group>"; };
+		8739C1FB191C16AE009C7B3B /* CHTRMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTRMessage.h; sourceTree = "<group>"; };
+		8739C1FC191C16AE009C7B3B /* CHTRMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRMessage.m; sourceTree = "<group>"; };
+		8739C1FF191C24EA009C7B3B /* NSArray+CHTRRandomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CHTRRandomObject.h"; sourceTree = "<group>"; };
+		8739C200191C24EA009C7B3B /* NSArray+CHTRRandomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CHTRRandomObject.m"; sourceTree = "<group>"; };
+		8739C204191C325C009C7B3B /* Yoda.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yoda.h; sourceTree = "<group>"; };
+		8739C205191C325C009C7B3B /* Yoda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yoda.m; sourceTree = "<group>"; };
+		8739C208191C36D5009C7B3B /* CHTRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTRChatViewController.h; sourceTree = "<group>"; };
+		8739C209191C36D5009C7B3B /* CHTRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRChatViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,10 +134,9 @@
 			children = (
 				8739C1CB191C1203009C7B3B /* CHTRAppDelegate.h */,
 				8739C1CC191C1203009C7B3B /* CHTRAppDelegate.m */,
-				8739C1CE191C1203009C7B3B /* Main_iPhone.storyboard */,
-				8739C1D1191C1203009C7B3B /* Main_iPad.storyboard */,
-				8739C1D4191C1203009C7B3B /* CHTRViewController.h */,
-				8739C1D5191C1203009C7B3B /* CHTRViewController.m */,
+				8739C1F7191C123C009C7B3B /* Model */,
+				8739C1F9191C1256009C7B3B /* View */,
+				8739C1F8191C1244009C7B3B /* Controller */,
 				8739C1D7191C1203009C7B3B /* Images.xcassets */,
 				8739C1C3191C1203009C7B3B /* Supporting Files */,
 			);
@@ -153,6 +170,48 @@
 				8739C1E7191C1203009C7B3B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8739C1F7191C123C009C7B3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8739C1F4191C1235009C7B3B /* CHTRChatter.h */,
+				8739C1F5191C1235009C7B3B /* CHTRChatter.m */,
+				8739C203191C320F009C7B3B /* Custom Subclasses */,
+				8739C1FB191C16AE009C7B3B /* CHTRMessage.h */,
+				8739C1FC191C16AE009C7B3B /* CHTRMessage.m */,
+				8739C1FF191C24EA009C7B3B /* NSArray+CHTRRandomObject.h */,
+				8739C200191C24EA009C7B3B /* NSArray+CHTRRandomObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8739C1F8191C1244009C7B3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8739C1D4191C1203009C7B3B /* CHTRViewController.h */,
+				8739C1D5191C1203009C7B3B /* CHTRViewController.m */,
+				8739C208191C36D5009C7B3B /* CHTRChatViewController.h */,
+				8739C209191C36D5009C7B3B /* CHTRChatViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8739C1F9191C1256009C7B3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8739C1CE191C1203009C7B3B /* Main_iPhone.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8739C203191C320F009C7B3B /* Custom Subclasses */ = {
+			isa = PBXGroup;
+			children = (
+				8739C204191C325C009C7B3B /* Yoda.h */,
+				8739C205191C325C009C7B3B /* Yoda.m */,
+			);
+			name = "Custom Subclasses";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +262,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Universität Heidelberg";
 				TargetAttributes = {
+					8739C1B8191C1203009C7B3B = {
+						DevelopmentTeam = SZEDS83NVF;
+					};
 					8739C1DC191C1203009C7B3B = {
 						TestTargetID = 8739C1B8191C1203009C7B3B;
 					};
@@ -232,7 +294,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8739C1D3191C1203009C7B3B /* Main_iPad.storyboard in Resources */,
 				8739C1D8191C1203009C7B3B /* Images.xcassets in Resources */,
 				8739C1D0191C1203009C7B3B /* Main_iPhone.storyboard in Resources */,
 				8739C1C7191C1203009C7B3B /* InfoPlist.strings in Resources */,
@@ -255,8 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8739C1C9191C1203009C7B3B /* main.m in Sources */,
+				8739C206191C325C009C7B3B /* Yoda.m in Sources */,
 				8739C1D6191C1203009C7B3B /* CHTRViewController.m in Sources */,
+				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
+				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
+				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
 				8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */,
+				8739C1F6191C1235009C7B3B /* CHTRChatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +330,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8739C207191C325C009C7B3B /* Yoda.m in Sources */,
+				8739C20B191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1EB191C1203009C7B3B /* chatterTests.m in Sources */,
+				8739C202191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
+				8739C1FE191C16AE009C7B3B /* CHTRMessage.m in Sources */,
+				8739C1FA191C1388009C7B3B /* CHTRChatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +364,6 @@
 				8739C1CF191C1203009C7B3B /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		8739C1D1191C1203009C7B3B /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8739C1D2191C1203009C7B3B /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		8739C1E7191C1203009C7B3B /* InfoPlist.strings */ = {
@@ -391,10 +454,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -404,10 +470,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -471,6 +540,7 @@
 				8739C1F0191C1203009C7B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8739C1F1191C1203009C7B3B /* Build configuration list for PBXNativeTarget "chatterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +549,7 @@
 				8739C1F3191C1203009C7B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

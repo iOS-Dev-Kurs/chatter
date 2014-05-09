@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Universität Heidelberg. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import Foundation;
 
 @interface CHTRAppDelegate : UIResponder <UIApplicationDelegate>
 
