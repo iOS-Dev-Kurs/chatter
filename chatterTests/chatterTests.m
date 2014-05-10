@@ -33,11 +33,10 @@
     CHTRChatter *leftChatter = [[CHTRChatter alloc] init];
     CHTRChatter *rightChatter = [[CHTRChatter alloc] init];
     leftChatter.partner = rightChatter;
-    rightChatter.partner = leftChatter;
     
     CHTRChatter *chatter = leftChatter;
-    CHTRMessage *message = nil;
-    while ((message = [chatter nextMessage])) {
+    while (YES) {
+        CHTRMessage *message = [chatter nextMessage];
         NSLog(message.text, nil);
         NSLog([chatter.partner responseForMessage:message].text, nil);
         chatter = chatter.partner;

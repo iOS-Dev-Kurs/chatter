@@ -13,6 +13,7 @@
 @interface CHTRChatter : NSObject
 
 @property (weak, nonatomic) CHTRChatter *partner;
+
 @property (strong, nonatomic) UIImage *image;
 
 - (CHTRMessage *)nextMessage;

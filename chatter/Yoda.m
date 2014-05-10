@@ -12,6 +12,7 @@
 
 - (CHTRMessage *)nextMessage {
     return [@[[CHTRMessage messageWithText:@"Do. Or do not. There is no try." type:CHTRMessageTypeStatement],
+              [CHTRMessage messageWithText:@"May the force be with you." type:CHTRMessageTypeStatement],
               [CHTRMessage messageWithText:@"Wars not make one great." type:CHTRMessageTypeStatement],
               [CHTRMessage messageWithText:@"Judge me by my size, do you?" type:CHTRMessageTypeQuestionBool],
               [CHTRMessage messageWithText:@"Patience you must have, my young padawan." type:CHTRMessageTypeStatement],
@@ -21,7 +22,7 @@
 }
 
 - (CHTRMessage *)responseForMessage:(CHTRMessage *)message {
-    return [CHTRMessage messageWithText:@"Hmm.." type:CHTRMessageTypeStatement];
+    return [CHTRMessage messageWithText:@"Hmm..." type:CHTRMessageTypeStatement];
 }
 
 - (UIImage *)image {

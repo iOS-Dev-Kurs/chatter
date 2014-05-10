@@ -95,9 +95,8 @@
 	NSString *text = chatBubble.message.text;
     
     // TODO: make more dynamic
-	CGSize size = [text boundingRectWithSize:CGSizeMake(tableView.bounds.size.width - 50.0f - 20.0f, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.bubbleTextFont} context:nil].size;
-
-    return size.height + 21.0f;
+	CGSize size = [text boundingRectWithSize:CGSizeMake(tableView.bounds.size.width - 70.0f - 20.0f, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:self.bubbleTextFont} context:nil].size;
+    return size.height + 20.0f;
 }
 
 - (void)scrollToBottomAnimated:(BOOL)animated

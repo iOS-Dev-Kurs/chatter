@@ -10,23 +10,24 @@
 #import "CHTRChatViewController.h"
 #import "CHTRChatter.h"
 
+
 @interface CHTRViewController ()
 
 @property (strong, nonatomic) CHTRChatViewController *chatViewController;
 
 @property (strong, nonatomic) CHTRChatter *leftChatter;
 @property (strong, nonatomic) CHTRChatter *rightChatter;
-
-@property (strong, nonatomic) CHTRChatter *chatter;
+@property (weak, nonatomic) CHTRChatter *chatter;
 
 @property (strong, nonatomic) IBOutlet UIButton *leftChatterButton;
 @property (strong, nonatomic) IBOutlet UIButton *rightChatterButton;
 @property (weak, nonatomic) UIButton *pressedChatterButton;
 
-- (IBAction)setChatterButtonPressed:(id)sender;
+- (IBAction)selectChatterButtonPressed:(id)sender;
 - (IBAction)nextButtonPressed:(UIBarButtonItem *)sender;
 
 @end
+
 
 @implementation CHTRViewController
 
@@ -34,10 +35,11 @@
 {
     [super viewDidLoad];
     
-    self.leftChatter = [[CHTRChatter alloc] init];
-    self.rightChatter = [[CHTRChatter alloc] init];
-    self.leftChatter.partner = self.rightChatter;
-    self.chatter = self.leftChatter;
+    self.leftChatterButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    self.rightChatterButton.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    
+    [self selectChatter:[[CHTRChatter alloc] init] onLeft:YES];
+    [self selectChatter:[[CHTRChatter alloc] init] onLeft:NO];
 
 }
 
@@ -48,7 +50,32 @@
     }
 }
 
-- (IBAction)setChatterButtonPressed:(UIButton *)sender
+- (void)selectChatter:(CHTRChatter *)chatter onLeft:(BOOL)onLeft
+{
+    if (onLeft) {
+        self.leftChatter = chatter;
+    } else {
+        self.rightChatter = chatter;
+    }
+    self.leftChatter.partner = self.rightChatter;
+    
+    UIButton *chatterButton = onLeft ? self.leftChatterButton : self.rightChatterButton;
+    if (chatter.image) {
+        [chatterButton setImage:chatter.image forState:UIControlStateNormal];
+        [chatterButton setTitle:nil forState:UIControlStateNormal];
+    } else {
+        [chatterButton setImage:nil forState:UIControlStateNormal];
+        [chatterButton setTitle:NSStringFromClass(chatter.class) forState:UIControlStateNormal];
+    }
+    
+    self.chatter = self.leftChatter;
+    [self.chatViewController reset];
+}
+
+
+#pragma mark - User Interaction
+
+- (IBAction)selectChatterButtonPressed:(UIButton *)sender
 {
     self.pressedChatterButton = sender;
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Enter a Chatter Class Name" message:nil delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Set Chatter", nil];
@@ -68,26 +95,7 @@
     }
     
     CHTRChatter *chatter = [[chatterClass alloc] init];
-    if (self.pressedChatterButton==self.leftChatterButton) {
-        self.leftChatter = chatter;
-    } else if (self.pressedChatterButton==self.rightChatterButton) {
-        self.rightChatter = chatter;
-    } else {
-        return;
-    }
-    self.leftChatter.partner = self.rightChatter;
-    
-    if (chatter.image) {
-        [self.pressedChatterButton setBackgroundImage:chatter.image forState:UIControlStateNormal];
-        [self.pressedChatterButton setTitle:nil forState:UIControlStateNormal];
-    } else {
-        [self.pressedChatterButton setBackgroundImage:nil forState:UIControlStateNormal];
-        [self.pressedChatterButton setTitle:NSStringFromClass(chatterClass) forState:UIControlStateNormal];
-    }
-
-    self.chatter = self.leftChatter;
-    [self.chatViewController reset];
-
+    [self selectChatter:chatter onLeft:self.pressedChatterButton==self.leftChatterButton];
 }
 
 - (IBAction)nextButtonPressed:(UIBarButtonItem *)sender
@@ -97,5 +105,6 @@
     [self.chatViewController displayMessage:[self.chatter.partner responseForMessage:message] onLeft:self.chatter.partner==self.leftChatter];
     self.chatter = self.chatter.partner;
 }
+
 
 @end

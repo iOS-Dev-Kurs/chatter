@@ -13,8 +13,7 @@ typedef enum : NSUInteger {
     CHTRMessageTypeStatement,
     CHTRMessageTypeJoke,
     CHTRMessageTypeQuestionBool,
-    CHTRMessageTypeQuestionOpinion,
-    CHTRMessageTypeQuestionWhy    
+    CHTRMessageTypeQuestionWhy
 } CHTRMessageType;
 
 
