@@ -17,6 +17,7 @@
               [CHTRMessage messageWithText:@"Judge me by my size, do you?" type:CHTRMessageTypeQuestionBool],
               [CHTRMessage messageWithText:@"Patience you must have, my young padawan." type:CHTRMessageTypeStatement],
               [CHTRMessage messageWithText:@"Powerful you have become, the dark side I sense in you." type:CHTRMessageTypeStatement],
+              [CHTRMessage messageWithText:@"Train yourself to let go of everything you fear to lose." type:CHTRMessageTypeStatement],
               [CHTRMessage messageWithText:@"You must unlearn what you have learned." type:CHTRMessageTypeStatement]
               ] randomObject];
 }
