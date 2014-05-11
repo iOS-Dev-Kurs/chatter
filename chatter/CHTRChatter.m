@@ -12,8 +12,6 @@
 
 - (CHTRMessage *)nextMessage;
 {
-    // Create a next message
-    
     // Here, we just pick a random message, but you could implemented some clever mechanics to generate a more natural conversation.
     // You can also add properties to CHTRMessage for this, but make sure it still works for everyone else
     
@@ -29,7 +27,7 @@
                 [CHTRMessage messageWithText:@"I always thought, the lemon is an underrated fruit. Care to weigh in?" type:CHTRMessageTypeStatement],
                 [CHTRMessage messageWithText:@"Are you alway like this?" type:CHTRMessageTypeQuestionBool],
                 [CHTRMessage messageWithText:@"Now I am confused..." type:CHTRMessageTypeStatement],
-                [CHTRMessage messageWithText:@"Time flies like an arrow; fruit flies like a banana." type:CHTRMessageTypeJoke],
+                [CHTRMessage messageWithText:@"Time flies like an arrow; fruit flies like a banana. Get it ? ;)" type:CHTRMessageTypeJoke],
                 [CHTRMessage messageWithText:@"Why?!" type:CHTRMessageTypeQuestionWhy]
                 ] randomObject];
 }
@@ -40,8 +38,8 @@
         
         case CHTRMessageTypeStatement:
         {
-            // there are a lot of ways to choose a random message
-            // you can choose a random number and do a switch:
+            // There are a lot of ways to choose a random message
+            // You can generate a random number and do a switch (not very elegant):
             CHTRMessage *response = [[CHTRMessage alloc] init];
             NSUInteger r = arc4random_uniform(6);
             switch (r) {
@@ -71,17 +69,18 @@
         }
             
         case CHTRMessageTypeQuestionBool:
-        {
-            // or use the instance method randomObject I added to NSArray (it's implemented in the NSArray+CHTRRandomObject.m file):
-            CHTRMessage *response = [[CHTRMessage alloc] init];
-            response.text = [ @[ @"Of course not!", @"Yeah, I think so.", @"Definitely. But that's a good thing :)", @"YOLO!"] randomObject];
-            response.type = CHTRMessageTypeStatement;
-            return response;
-        }
+            // Instead, you can use the class method messageWithText:type: I added to CHTRMessage to quickly create an array of messages.
+            // I also added an instance method randomObject to NSArray that you can use to directly return a random object from the array (randomObject is implemented in the NSArray+CHTRRandomObject.m file).
+            // The following uses a lot of shorthand notation ;)
+            // @[ ... ] returns an array of the given CHTRMessage objects and [ ... randomObject] calls the randomObject method on this array, selecting one of them
+            // This way you instantiate quite a lot of objects just to return one of them, of course. There may be a more efficient way to do this.
+            return [ @[ [CHTRMessage messageWithText:@"Of course not!" type:CHTRMessageTypeStatement],
+                        [CHTRMessage messageWithText:@"Yeah, I think so." type:CHTRMessageTypeStatement],
+                        [CHTRMessage messageWithText:@"Definitely. But that's a good thing :)" type:CHTRMessageTypeStatement],
+                        [CHTRMessage messageWithText:@"YOLO!" type:CHTRMessageTypeStatement]
+                        ] randomObject];
             
         case CHTRMessageTypeQuestionWhy:
-            // you can also use the class method messageWithText:type: I added to CHTRMessage to quickly create an array of messages and directly return a random object from this array
-            // this is a lot of shorthand notation ;) @[ ... ] returns an array of the given CHTRMessage objects and [ ... randomObject] calls the randomObject method on this array, selecting one of them
             return [ @[ [CHTRMessage messageWithText:@"Just because I can!" type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"Because that's the way it is." type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"Who knows?!" type:CHTRMessageTypeStatement],
@@ -93,7 +92,6 @@
                         ] randomObject];
             
         case CHTRMessageTypeJoke:
-            // just pick what you like ;) I like this:
             return [ @[ [CHTRMessage messageWithText:@"Is that supposed to be funny?! <.<" type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"HAHA, you are killing me :D" type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"rofl :D:D" type:CHTRMessageTypeStatement],
