@@ -88,8 +88,8 @@
     if (buttonIndex==alertView.cancelButtonIndex) return;
     
     Class chatterClass = [[NSBundle mainBundle] classNamed:[alertView textFieldAtIndex:0].text];
-    if (!chatterClass) {
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Unable to load Class" message:@"This Chatter class does not exist." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    if (!chatterClass||![chatterClass isSubclassOfClass:[CHTRChatter class]]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Unable to load Class" message:@"This Chatter class does not exist or is not a subclass of CHTRChatter." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [alertView show];
         return;
     }
