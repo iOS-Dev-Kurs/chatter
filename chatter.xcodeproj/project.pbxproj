@@ -31,6 +31,7 @@
 		8739C207191C325C009C7B3B /* Yoda.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C205191C325C009C7B3B /* Yoda.m */; };
 		8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
 		8739C20B191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
+		878F7FDB1925742500FF2E53 /* Homer.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F7FDA1925742500FF2E53 /* Homer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		8739C205191C325C009C7B3B /* Yoda.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Yoda.m; sourceTree = "<group>"; };
 		8739C208191C36D5009C7B3B /* CHTRChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTRChatViewController.h; sourceTree = "<group>"; };
 		8739C209191C36D5009C7B3B /* CHTRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRChatViewController.m; sourceTree = "<group>"; };
+		878F7FD91925742500FF2E53 /* Homer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Homer.h; sourceTree = "<group>"; };
+		878F7FDA1925742500FF2E53 /* Homer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Homer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +213,8 @@
 			children = (
 				8739C204191C325C009C7B3B /* Yoda.h */,
 				8739C205191C325C009C7B3B /* Yoda.m */,
+				878F7FD91925742500FF2E53 /* Homer.h */,
+				878F7FDA1925742500FF2E53 /* Homer.m */,
 			);
 			name = "Custom Subclasses";
 			sourceTree = "<group>";
@@ -321,6 +326,7 @@
 				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
 				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
+				878F7FDB1925742500FF2E53 /* Homer.m in Sources */,
 				8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */,
 				8739C1F6191C1235009C7B3B /* CHTRChatter.m in Sources */,
 			);
