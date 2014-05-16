@@ -32,6 +32,7 @@
 		8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
 		8739C20B191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
 		878F7FDB1925742500FF2E53 /* Homer.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F7FDA1925742500FF2E53 /* Homer.m */; };
+		87DD523D19266C470003402D /* Vader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD523C19266C470003402D /* Vader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		8739C209191C36D5009C7B3B /* CHTRChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTRChatViewController.m; sourceTree = "<group>"; };
 		878F7FD91925742500FF2E53 /* Homer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Homer.h; sourceTree = "<group>"; };
 		878F7FDA1925742500FF2E53 /* Homer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Homer.m; sourceTree = "<group>"; };
+		87DD523B19266C470003402D /* Vader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vader.h; sourceTree = "<group>"; };
+		87DD523C19266C470003402D /* Vader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +218,8 @@
 				8739C205191C325C009C7B3B /* Yoda.m */,
 				878F7FD91925742500FF2E53 /* Homer.h */,
 				878F7FDA1925742500FF2E53 /* Homer.m */,
+				87DD523B19266C470003402D /* Vader.h */,
+				87DD523C19266C470003402D /* Vader.m */,
 			);
 			name = "Custom Subclasses";
 			sourceTree = "<group>";
@@ -322,6 +327,7 @@
 			files = (
 				8739C1C9191C1203009C7B3B /* main.m in Sources */,
 				8739C206191C325C009C7B3B /* Yoda.m in Sources */,
+				87DD523D19266C470003402D /* Vader.m in Sources */,
 				8739C1D6191C1203009C7B3B /* CHTRViewController.m in Sources */,
 				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
