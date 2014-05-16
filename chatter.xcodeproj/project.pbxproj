@@ -35,6 +35,7 @@
 		8739C20B191C36D5009C7B3B /* CHTRChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C209191C36D5009C7B3B /* CHTRChatViewController.m */; };
 		878F7FDB1925742500FF2E53 /* Homer.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F7FDA1925742500FF2E53 /* Homer.m */; };
 		87DD523D19266C470003402D /* Vader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD523C19266C470003402D /* Vader.m */; };
+		A1F16EAE1926C38100DE6210 /* Peter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F16EAD1926C38100DE6210 /* Peter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,8 @@
 		878F7FDA1925742500FF2E53 /* Homer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Homer.m; sourceTree = "<group>"; };
 		87DD523B19266C470003402D /* Vader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vader.h; sourceTree = "<group>"; };
 		87DD523C19266C470003402D /* Vader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vader.m; sourceTree = "<group>"; };
+		A1F16EAC1926C38100DE6210 /* Peter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peter.h; sourceTree = "<group>"; };
+		A1F16EAD1926C38100DE6210 /* Peter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +231,8 @@
 				39884ED119264CE70062CA2B /* Vincent.m */,
 				878F7FD91925742500FF2E53 /* Homer.h */,
 				878F7FDA1925742500FF2E53 /* Homer.m */,
+				A1F16EAC1926C38100DE6210 /* Peter.h */,
+				A1F16EAD1926C38100DE6210 /* Peter.m */,
 				87DD523B19266C470003402D /* Vader.h */,
 				87DD523C19266C470003402D /* Vader.m */,
 			);
@@ -346,6 +351,7 @@
 				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
 				878F7FDB1925742500FF2E53 /* Homer.m in Sources */,
 				8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */,
+				A1F16EAE1926C38100DE6210 /* Peter.m in Sources */,
 				8739C1F6191C1235009C7B3B /* CHTRChatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
