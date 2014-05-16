@@ -42,6 +42,7 @@
                         [CHTRMessage messageWithText:@"You make my brain hurt!" type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"Yeah of course!" type:CHTRMessageTypeStatement],
                         [CHTRMessage messageWithText:@"Oh god, no. What's wrong with you?" type:CHTRMessageTypeStatement],
+                        [CHTRMessage messageWithText:@"Sure." type:CHTRMessageTypeStatement],
                         ] randomObject];
             
         case CHTRMessageTypeQuestionWhy:
