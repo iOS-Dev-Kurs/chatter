@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BD775DE19264D24009D1965 /* Jules.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BD775DD19264D24009D1965 /* Jules.m */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BD775DC19264D24009D1965 /* Jules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jules.h; sourceTree = "<group>"; };
+		2BD775DD19264D24009D1965 /* Jules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jules.m; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,6 +219,8 @@
 			children = (
 				8739C204191C325C009C7B3B /* Yoda.h */,
 				8739C205191C325C009C7B3B /* Yoda.m */,
+				2BD775DC19264D24009D1965 /* Jules.h */,
+				2BD775DD19264D24009D1965 /* Jules.m */,
 				878F7FD91925742500FF2E53 /* Homer.h */,
 				878F7FDA1925742500FF2E53 /* Homer.m */,
 				87DD523B19266C470003402D /* Vader.h */,
@@ -329,6 +334,7 @@
 				8739C206191C325C009C7B3B /* Yoda.m in Sources */,
 				87DD523D19266C470003402D /* Vader.m in Sources */,
 				8739C1D6191C1203009C7B3B /* CHTRViewController.m in Sources */,
+				2BD775DE19264D24009D1965 /* Jules.m in Sources */,
 				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
 				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
