@@ -18,6 +18,7 @@ typedef enum : NSUInteger {
     CHTRMessageTypeJoke,
     CHTRMessageTypeQuestionBool,
     CHTRMessageTypeQuestionWhy,
+    CHTRMessageTypeHehehe,      //silly laughter, implemented for Peter Griffin
 } CHTRMessageType;
 
 
