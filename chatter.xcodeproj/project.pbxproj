@@ -36,6 +36,7 @@
 		878F7FDB1925742500FF2E53 /* Homer.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F7FDA1925742500FF2E53 /* Homer.m */; };
 		87DD523D19266C470003402D /* Vader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD523C19266C470003402D /* Vader.m */; };
 		A1F16EAE1926C38100DE6210 /* Peter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F16EAD1926C38100DE6210 /* Peter.m */; };
+		BC69D2C01927B2C500683123 /* Grumpy_Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = BC69D2BF1927B2C500683123 /* Grumpy_Cat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		87DD523C19266C470003402D /* Vader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vader.m; sourceTree = "<group>"; };
 		A1F16EAC1926C38100DE6210 /* Peter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peter.h; sourceTree = "<group>"; };
 		A1F16EAD1926C38100DE6210 /* Peter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peter.m; sourceTree = "<group>"; };
+		BC69D2BE1927B2C500683123 /* Grumpy_Cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grumpy_Cat.h; sourceTree = "<group>"; };
+		BC69D2BF1927B2C500683123 /* Grumpy_Cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grumpy_Cat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +198,8 @@
 				8739C203191C320F009C7B3B /* Custom Subclasses */,
 				8739C1FB191C16AE009C7B3B /* CHTRMessage.h */,
 				8739C1FC191C16AE009C7B3B /* CHTRMessage.m */,
+				BC69D2BE1927B2C500683123 /* Grumpy_Cat.h */,
+				BC69D2BF1927B2C500683123 /* Grumpy_Cat.m */,
 				8739C1FF191C24EA009C7B3B /* NSArray+CHTRRandomObject.h */,
 				8739C200191C24EA009C7B3B /* NSArray+CHTRRandomObject.m */,
 			);
@@ -348,6 +353,7 @@
 				39884ED219264CE70062CA2B /* Vincent.m in Sources */,
 				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
+				BC69D2C01927B2C500683123 /* Grumpy_Cat.m in Sources */,
 				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
 				878F7FDB1925742500FF2E53 /* Homer.m in Sources */,
 				8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */,
@@ -488,6 +494,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -504,6 +511,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos7.1;
 				TARGETED_DEVICE_FAMILY = 1;
