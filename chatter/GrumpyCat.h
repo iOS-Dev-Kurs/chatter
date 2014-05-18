@@ -8,6 +8,6 @@
 
 #import "CHTRChatter.h"
 
-@interface Grumpy_Cat : CHTRChatter
+@interface GrumpyCat : CHTRChatter
 
 @end

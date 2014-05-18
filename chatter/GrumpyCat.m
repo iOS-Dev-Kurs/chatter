@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Universität Heidelberg. All rights reserved.
 //
 
-#import "Grumpy_Cat.h"
+#import "GrumpyCat.h"
 
-@implementation Grumpy_Cat
+@implementation GrumpyCat
 
 - (CHTRMessage *)nextMessage;
 {
