@@ -42,7 +42,7 @@
             // There are a lot of ways to choose a random message
             // You can generate a random number and do a switch (not very elegant):
             CHTRMessage *response = [[CHTRMessage alloc] init];
-            NSUInteger r = arc4random_uniform(6);
+            NSUInteger r = arc4random_uniform(4);
             switch (r) {
                 case 0:
                     response.text = @"Could you stop talking to me? Thanks!";
