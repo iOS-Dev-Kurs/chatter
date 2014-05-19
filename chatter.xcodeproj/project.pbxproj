@@ -36,6 +36,7 @@
 		878F7FDB1925742500FF2E53 /* Homer.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F7FDA1925742500FF2E53 /* Homer.m */; };
 		87DD523D19266C470003402D /* Vader.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD523C19266C470003402D /* Vader.m */; };
 		A1F16EAE1926C38100DE6210 /* Peter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F16EAD1926C38100DE6210 /* Peter.m */; };
+		B4E184E919299F8400B0F9B9 /* Tyler.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E184E819299F8400B0F9B9 /* Tyler.m */; };
 		BC69D2C01927B2C500683123 /* GrumpyCat.m in Sources */ = {isa = PBXBuildFile; fileRef = BC69D2BF1927B2C500683123 /* GrumpyCat.m */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,8 @@
 		87DD523C19266C470003402D /* Vader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vader.m; sourceTree = "<group>"; };
 		A1F16EAC1926C38100DE6210 /* Peter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peter.h; sourceTree = "<group>"; };
 		A1F16EAD1926C38100DE6210 /* Peter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Peter.m; sourceTree = "<group>"; };
+		B4E184E719299F8400B0F9B9 /* Tyler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tyler.h; sourceTree = "<group>"; };
+		B4E184E819299F8400B0F9B9 /* Tyler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tyler.m; sourceTree = "<group>"; };
 		BC69D2BE1927B2C500683123 /* GrumpyCat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrumpyCat.h; sourceTree = "<group>"; };
 		BC69D2BF1927B2C500683123 /* GrumpyCat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrumpyCat.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,6 +243,8 @@
 				87DD523C19266C470003402D /* Vader.m */,
 				BC69D2BE1927B2C500683123 /* GrumpyCat.h */,
 				BC69D2BF1927B2C500683123 /* GrumpyCat.m */,
+				B4E184E719299F8400B0F9B9 /* Tyler.h */,
+				B4E184E819299F8400B0F9B9 /* Tyler.m */,
 			);
 			name = "Custom Subclasses";
 			sourceTree = "<group>";
@@ -354,6 +359,7 @@
 				8739C20A191C36D5009C7B3B /* CHTRChatViewController.m in Sources */,
 				8739C1FD191C16AE009C7B3B /* CHTRMessage.m in Sources */,
 				BC69D2C01927B2C500683123 /* GrumpyCat.m in Sources */,
+				B4E184E919299F8400B0F9B9 /* Tyler.m in Sources */,
 				8739C201191C24EA009C7B3B /* NSArray+CHTRRandomObject.m in Sources */,
 				878F7FDB1925742500FF2E53 /* Homer.m in Sources */,
 				8739C1CD191C1203009C7B3B /* CHTRAppDelegate.m in Sources */,
