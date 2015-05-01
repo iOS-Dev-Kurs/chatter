@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="KlN-FF-yTo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E11f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KlN-FF-yTo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -17,38 +18,34 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F6o-CN-vWc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-285" y="34"/>
+            <point key="canvasLocation" x="-534.375" y="35.91549295774648"/>
         </scene>
-        <!--View Controller - Chatter-->
+        <!--Chatter-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="CHTRViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="chatter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baC-Zi-Z7F">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baC-Zi-Z7F">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
                                 <connections>
                                     <segue destination="3LA-9F-ncx" kind="embed" identifier="embedChat" id="1vi-3Y-0VQ"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-Zn-cJC">
-                                <rect key="frame" x="0.0" y="440" width="320" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRM-Zn-cJC">
+                                <rect key="frame" x="0.0" y="542" width="600" height="58"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-Dj-jSf">
-                                        <rect key="frame" x="20" y="8" width="136" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jch-Dj-jSf">
+                                        <rect key="frame" x="20" y="8" width="276" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWW-SX-VAa">
-                                                <rect key="frame" x="-76" y="0.0" width="287" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vWW-SX-VAa">
+                                                <rect key="frame" x="76" y="0.0" width="124" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="54y-ch-crF"/>
                                                 </constraints>
@@ -57,7 +54,7 @@
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="selectChatterButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pgj-Fv-vsS"/>
+                                                    <action selector="selectChatterButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uSw-sD-l7T"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -67,19 +64,17 @@
                                             <constraint firstAttribute="centerX" secondItem="vWW-SX-VAa" secondAttribute="centerX" id="h73-RC-IRi"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-yg-9j7">
-                                        <rect key="frame" x="164" y="8" width="136" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKq-yg-9j7">
+                                        <rect key="frame" x="304" y="8" width="276" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-u6-638">
-                                                <rect key="frame" x="1" y="0.0" width="134" height="100"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-u6-638">
+                                                <rect key="frame" x="71" y="0.0" width="134" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <state key="normal" title="Select right Chatter">
                                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="selectChatterButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PtP-nF-2U2"/>
+                                                    <action selector="selectChatterButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="taC-0p-0FP"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -90,8 +85,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5C6-rP-wL9">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="1"/>
                                         <color key="backgroundColor" red="0.79442362882653061" green="0.79442362882653061" blue="0.79442362882653061" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="wFu-Ne-vqg"/>
@@ -129,78 +123,78 @@
                     <navigationItem key="navigationItem" title="Chatter" id="w98-Qf-yrA">
                         <barButtonItem key="rightBarButtonItem" title="Chat on, guys!" id="5AS-ZQ-sae">
                             <connections>
-                                <action selector="nextButtonPressed:" destination="vXZ-lx-hvc" id="GzH-Z8-44T"/>
+                                <action selector="chatButtonPressed:" destination="vXZ-lx-hvc" id="pUb-Sr-prq"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leftChatterButton" destination="vWW-SX-VAa" id="Oku-1d-Ne8"/>
-                        <outlet property="rightChatterButton" destination="Asj-u6-638" id="qDk-LM-6Cf"/>
+                        <outlet property="leftChatterButton" destination="vWW-SX-VAa" id="ZOF-Xh-neo"/>
+                        <outlet property="rightChatterButton" destination="Asj-u6-638" id="7Xx-VT-gbG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="223" y="34"/>
+            <point key="canvasLocation" x="267" y="35"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="hgw-sE-ytc">
             <objects>
-                <tableViewController id="3LA-9F-ncx" customClass="CHTRChatViewController" sceneMemberID="viewController">
+                <tableViewController id="3LA-9F-ncx" customClass="ChatViewController" customModule="chatter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3lD-4H-TDs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="440"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="542"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftChatBubble" id="p9c-j7-zcx" customClass="CHTRChatBubbleCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftChatBubble" id="p9c-j7-zcx" customClass="ChatBubbleCell" customModule="chatter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="p9c-j7-zcx" id="PD6-xj-8mO">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="MhX-fO-oje">
-                                            <rect key="frame" x="20" y="10" width="230" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Chat Message" translatesAutoresizingMaskIntoConstraints="NO" id="MaX-GS-2Mi">
+                                            <rect key="frame" x="15" y="8" width="535" height="28"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="MhX-fO-oje" secondAttribute="trailing" constant="70" id="BFp-df-rMx"/>
-                                        <constraint firstItem="MhX-fO-oje" firstAttribute="top" secondItem="PD6-xj-8mO" secondAttribute="top" constant="10" id="Kov-mD-CAq"/>
-                                        <constraint firstItem="MhX-fO-oje" firstAttribute="leading" secondItem="PD6-xj-8mO" secondAttribute="leading" constant="20" id="WpT-rB-56z"/>
-                                        <constraint firstAttribute="bottom" secondItem="MhX-fO-oje" secondAttribute="bottom" constant="10" id="qJY-0d-Mds"/>
+                                        <constraint firstItem="MaX-GS-2Mi" firstAttribute="leading" secondItem="PD6-xj-8mO" secondAttribute="leading" constant="15" id="1EY-mq-ZF5"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="MaX-GS-2Mi" secondAttribute="bottom" id="SB5-WV-6Ba"/>
+                                        <constraint firstItem="MaX-GS-2Mi" firstAttribute="top" secondItem="PD6-xj-8mO" secondAttribute="topMargin" id="Ubb-hP-Dpv"/>
+                                        <constraint firstAttribute="trailing" secondItem="MaX-GS-2Mi" secondAttribute="trailing" constant="50" id="XoY-7x-HsS"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <connections>
-                                    <outlet property="textBubbleLabel" destination="MhX-fO-oje" id="SAa-x9-Zdp"/>
+                                    <outlet property="textView" destination="MaX-GS-2Mi" id="9TZ-Bw-ZOC"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightChatBubble" id="DNL-sU-QEN" customClass="CHTRChatBubbleCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightChatBubble" id="DNL-sU-QEN" customClass="ChatBubbleCell" customModule="chatter" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DNL-sU-QEN" id="EvY-fO-QVl">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="230" translatesAutoresizingMaskIntoConstraints="NO" id="1tp-ch-6vd">
-                                            <rect key="frame" x="70" y="10" width="230" height="24"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Chat Message" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="jJw-Xw-wVl">
+                                            <rect key="frame" x="50" y="8" width="535" height="28"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="1tp-ch-6vd" firstAttribute="leading" secondItem="EvY-fO-QVl" secondAttribute="leading" constant="70" id="Ey7-2i-dMn"/>
-                                        <constraint firstItem="1tp-ch-6vd" firstAttribute="top" secondItem="EvY-fO-QVl" secondAttribute="top" constant="10" id="Y2u-PL-bXT"/>
-                                        <constraint firstAttribute="bottom" secondItem="1tp-ch-6vd" secondAttribute="bottom" constant="10" id="oCd-FL-nq5"/>
-                                        <constraint firstAttribute="trailing" secondItem="1tp-ch-6vd" secondAttribute="trailing" constant="20" id="oyg-cE-Pbg"/>
+                                        <constraint firstItem="jJw-Xw-wVl" firstAttribute="leading" secondItem="EvY-fO-QVl" secondAttribute="leading" constant="50" id="5Q7-X7-HcE"/>
+                                        <constraint firstAttribute="trailing" secondItem="jJw-Xw-wVl" secondAttribute="trailing" constant="15" id="Dwp-6n-E5B"/>
+                                        <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="jJw-Xw-wVl" secondAttribute="bottom" id="b6r-eA-pLN"/>
+                                        <constraint firstItem="jJw-Xw-wVl" firstAttribute="top" secondItem="EvY-fO-QVl" secondAttribute="topMargin" id="hr2-dG-IBN"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="textBubbleLabel" destination="1tp-ch-6vd" id="XZK-De-vLs"/>
+                                    <outlet property="textView" destination="jJw-Xw-wVl" id="aoO-Zb-XVe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -212,12 +206,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qf2-27-4oo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="34"/>
+            <point key="canvasLocation" x="1019" y="35"/>
         </scene>
     </scenes>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
