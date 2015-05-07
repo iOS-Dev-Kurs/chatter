@@ -20,7 +20,6 @@ class Mcclane: Chatter {
             Message(content: "I'm a cop from New York.", type: .Statement),
             Message(content: "Drop the gun!", type: .Statement),
             Message(content: "Who's driving this car, Stevie Wonder?", type: .QuestionBool),
-            Message(content: "How 'bout i let you live?", type: .QuestionBool),
             Message(content: "Why'd you have to nuke the whole building, Hans? ", type: .QuestionWhy),
             Message(content: "Welcome to the party, pal.", type: .Statement),
             Message(content: "Yippee-ki-yay, motherf***er.", type: .Statement)
@@ -32,7 +31,7 @@ class Mcclane: Chatter {
             Message(content: "It's okay, I'm a cop.", type: .QuestionWhy),
             Message(content: "It rings a bell, yeah.", type: .QuestionBool),
             Message(content: "No, not since this morning.", .QuestionBool),
-            Message(content: "You tell me, kid. You're the criminal.", .QuestionBool)
+            Message(content: "You tell me, kid. You're the criminal.", .QuestionWhy)
             Message(content: "Yeah. That's what my captain keeps telling me.", .Statement),
             Message(content: "Someone give me some aspirins.", .Joke)
         ].randomElement()
