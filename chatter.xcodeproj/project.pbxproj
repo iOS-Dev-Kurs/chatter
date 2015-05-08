@@ -16,7 +16,6 @@
 		8739C1E0191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1E1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
 		8739C1E9191C1203009C7B3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1E7191C1203009C7B3B /* InfoPlist.strings */; };
-		8739C1EB191C1203009C7B3B /* chatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1EA191C1203009C7B3B /* chatterTests.m */; };
 		879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5101AF2952E00F36F1C /* AppDelegate.swift */; };
 		879EC5431AF295D200F36F1C /* Chatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5421AF295D200F36F1C /* Chatter.swift */; };
 		879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5441AF29DC200F36F1C /* ViewController.swift */; };
@@ -47,7 +46,6 @@
 		8739C1DE191C1203009C7B3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8739C1E6191C1203009C7B3B /* chatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatterTests-Info.plist"; sourceTree = "<group>"; };
 		8739C1E8191C1203009C7B3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8739C1EA191C1203009C7B3B /* chatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatterTests.m; sourceTree = "<group>"; };
 		879EC5101AF2952E00F36F1C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879EC5421AF295D200F36F1C /* Chatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chatter.swift; sourceTree = "<group>"; };
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		8739C1E4191C1203009C7B3B /* chatterTests */ = {
 			isa = PBXGroup;
 			children = (
-				8739C1EA191C1203009C7B3B /* chatterTests.m */,
 				8739C1E5191C1203009C7B3B /* Supporting Files */,
 			);
 			path = chatterTests;
@@ -297,7 +294,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8739C1EB191C1203009C7B3B /* chatterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,8 +425,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -451,8 +446,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "chatter/chatter-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				INFOPLIST_FILE = "chatterTests/chatterTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
