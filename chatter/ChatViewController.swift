@@ -62,7 +62,7 @@ class ChatViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let chatBubble = chatBubbles[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(chatBubble.side == .Left ? "leftChatBubble" : "rightChatBubble", forIndexPath: indexPath) as! ChatBubbleCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(chatBubble.side == .Left ? "leftChatBubble" : "rightChatBubble", forIndexPath: indexPath) as ChatBubbleCell
         cell.textView.text = chatBubble.message.content
         return cell
     }
