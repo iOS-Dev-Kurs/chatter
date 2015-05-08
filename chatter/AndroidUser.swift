@@ -11,29 +11,30 @@ import UIKit
 class AndroidUser: Chatter {
     
     required init() {
-        super.init(image: UIImage(named: "homer"))
+        super.init(image: UIImage(named: "android"))
     }
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "Story of my life.", type: .Statement),
-            Message(content: "I'm a cop from New York.", type: .Statement),
-            Message(content: "Drop the gun!", type: .Statement),
-            Message(content: "Who's driving this car, Stevie Wonder?", type: .QuestionBool),
-            Message(content: "Why'd you have to nuke the whole building, Hans? ", type: .QuestionWhy),
-            Message(content: "Welcome to the party, pal.", type: .Statement),
-            Message(content: "Yippee-ki-yay, motherf***er.", type: .Statement)
+            Message(content: "My companies mission: Making the worlds information accessible to everyone and so on...", type: .Statement),
+            Message(content: "Linux rocks.", type: .Statement),
+            Message(content: "Please also use android, I am feeling lost!", type: .Statement),
+            Message(content: "Am I too stupid for Mac?", type: .QuestionBool),
+            Message(content: "Why dont you guys just use normal keys? ", type: .QuestionWhy),
+            Message(content: "Why am I green?", type: .QuestionWhy),
+            //Message(content: "Welcome to the party, pal.", type: .Statement),
+            //Message(content: "Yippee-ki-yay, motherf***er.", type: .Statement)
             ].randomElement()
     }
     
     override func responseForMessage(message: Message) -> Message {
         return [
-            Message(content: "It's okay, I'm a cop.", type: .QuestionWhy),
-            Message(content: "It rings a bell, yeah.", type: .QuestionBool),
-            Message(content: "No, not since this morning.", type: .QuestionBool),
-            Message(content: "You tell me, kid. You're the criminal.", type: .QuestionWhy),
-            Message(content: "Yeah. That's what my captain keeps telling me.", type: .Statement),
-            Message(content: "Someone give me some aspirins.", type: .Joke)
+            Message(content: "Because I'm a stupid android user.", type: .QuestionWhy),
+            Message(content: "I dont get it, sorry.", type: .QuestionBool),
+            Message(content: "No, never.", type: .QuestionBool),
+            Message(content: "Cos iOS is to hard to navigate on.", type: .QuestionWhy),
+            Message(content: "Yeah. That's what my Eric Schmidt keeps telling me.", type: .Statement),
+            Message(content: "Someone give me some time to figure out iOS navigation.", type: .Joke)
             ].randomElement()
     }
     
