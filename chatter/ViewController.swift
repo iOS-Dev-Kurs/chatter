@@ -112,7 +112,7 @@ class ViewController: UIViewController {
         }
         alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         alertController.addAction(UIAlertAction(title: "Set Chatter", style: .Default, handler: { action in
-            let chatterClassName = (alertController.textFields?.first as! UITextField).text
+            let chatterClassName = (alertController.textFields?.first as UITextField).text as String
             if let chatter = (NSBundle.mainBundle().classNamed("chatter." + chatterClassName) as? Chatter.Type)?() {
                 let side: Side = sender === self.leftChatterButton ? .Left : .Right
                 self.chatters[side] = chatter
@@ -128,8 +128,10 @@ class ViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let identifier = segue.identifier where identifier == "embedChat" {
-            self.chatViewController = segue.destinationViewController as! ChatViewController
+        if let identifier = segue.identifier {
+            if identifier == "embedChat" {
+                self.chatViewController = segue.destinationViewController as ChatViewController
+            }
         }
     }
     
