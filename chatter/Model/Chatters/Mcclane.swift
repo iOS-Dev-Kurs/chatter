@@ -30,10 +30,10 @@ class Mcclane: Chatter {
         return [
             Message(content: "It's okay, I'm a cop.", type: .QuestionWhy),
             Message(content: "It rings a bell, yeah.", type: .QuestionBool),
-            Message(content: "No, not since this morning.", .QuestionBool),
-            Message(content: "You tell me, kid. You're the criminal.", .QuestionWhy)
-            Message(content: "Yeah. That's what my captain keeps telling me.", .Statement),
-            Message(content: "Someone give me some aspirins.", .Joke)
+            Message(content: "No, not since this morning.", type: .QuestionBool),
+            Message(content: "You tell me, kid. You're the criminal.", type: .QuestionWhy),
+            Message(content: "Yeah. That's what my captain keeps telling me.", type: .Statement),
+            Message(content: "Someone give me some aspirins.", type: .Joke)
         ].randomElement()
     }
     
