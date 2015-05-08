@@ -16,7 +16,6 @@
 		8739C1E0191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1E1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
 		8739C1E9191C1203009C7B3B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1E7191C1203009C7B3B /* InfoPlist.strings */; };
-		8739C1EB191C1203009C7B3B /* chatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8739C1EA191C1203009C7B3B /* chatterTests.m */; };
 		875DAA1D1AFC9F50004E3C95 /* Chatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875DAA1C1AFC9F50004E3C95 /* Chatter.swift */; };
 		875DAA201AFC9F59004E3C95 /* Mcclane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875DAA1E1AFC9F59004E3C95 /* Mcclane.swift */; };
 		875DAA211AFC9F59004E3C95 /* Yoda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875DAA1F1AFC9F59004E3C95 /* Yoda.swift */; };
@@ -24,6 +23,7 @@
 		879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5441AF29DC200F36F1C /* ViewController.swift */; };
 		879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5461AF29DD600F36F1C /* ChatViewController.swift */; };
 		879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */; };
+		9C90B4B61AFCA23300BC8ACC /* AndroidUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C90B4B51AFCA23300BC8ACC /* AndroidUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		8739C1DE191C1203009C7B3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8739C1E6191C1203009C7B3B /* chatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatterTests-Info.plist"; sourceTree = "<group>"; };
 		8739C1E8191C1203009C7B3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		8739C1EA191C1203009C7B3B /* chatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = chatterTests.m; sourceTree = "<group>"; };
 		875DAA1C1AFC9F50004E3C95 /* Chatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Chatter.swift; path = Model/Chatter.swift; sourceTree = "<group>"; };
 		875DAA1E1AFC9F59004E3C95 /* Mcclane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Mcclane.swift; path = Model/Chatters/Mcclane.swift; sourceTree = "<group>"; };
 		875DAA1F1AFC9F59004E3C95 /* Yoda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Yoda.swift; path = Model/Chatters/Yoda.swift; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleCell.swift; sourceTree = "<group>"; };
+		9C90B4B51AFCA23300BC8ACC /* AndroidUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AndroidUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +182,7 @@
 			children = (
 				875DAA1E1AFC9F59004E3C95 /* Mcclane.swift */,
 				875DAA1F1AFC9F59004E3C95 /* Yoda.swift */,
+				9C90B4B51AFCA23300BC8ACC /* AndroidUser.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -290,6 +291,7 @@
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
+				9C90B4B61AFCA23300BC8ACC /* AndroidUser.swift in Sources */,
 				875DAA1D1AFC9F50004E3C95 /* Chatter.swift in Sources */,
 				875DAA211AFC9F59004E3C95 /* Yoda.swift in Sources */,
 				875DAA201AFC9F59004E3C95 /* Mcclane.swift in Sources */,
