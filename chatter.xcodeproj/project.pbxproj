@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35FB1A401B05F7DD00A950CD /* ChandlerBing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FB1A3F1B05F7DD00A950CD /* ChandlerBing.swift */; };
 		3A8CBCC51B05DAB10004BB54 /* HankHill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8CBCC41B05DAB10004BB54 /* HankHill.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35FB1A3F1B05F7DD00A950CD /* ChandlerBing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChandlerBing.swift; sourceTree = "<group>"; };
 		3A8CBCC41B05DAB10004BB54 /* HankHill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HankHill.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -183,6 +185,7 @@
 				875DAA1E1AFC9F59004E3C95 /* Mcclane.swift */,
 				875DAA1F1AFC9F59004E3C95 /* Yoda.swift */,
 				3A8CBCC41B05DAB10004BB54 /* HankHill.swift */,
+				35FB1A3F1B05F7DD00A950CD /* ChandlerBing.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35FB1A401B05F7DD00A950CD /* ChandlerBing.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
