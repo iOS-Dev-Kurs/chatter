@@ -12,8 +12,6 @@
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
 		8739C1D8191C1203009C7B3B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8739C1D7191C1203009C7B3B /* Images.xcassets */; };
 		87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87468FD31CCD3B3500DB4A03 /* Chatter.swift */; };
-		87468FD81CCD3B3500DB4A03 /* HankHill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87468FD41CCD3B3500DB4A03 /* HankHill.swift */; };
-		87468FD91CCD3B3500DB4A03 /* McClane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87468FD51CCD3B3500DB4A03 /* McClane.swift */; };
 		87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87468FD61CCD3B3500DB4A03 /* Yoda.swift */; };
 		87468FDC1CCD3B6100DB4A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87468FDB1CCD3B6100DB4A03 /* Main.storyboard */; };
 		879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5101AF2952E00F36F1C /* AppDelegate.swift */; };
@@ -31,10 +29,9 @@
 		8739C1D7191C1203009C7B3B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8739C1DE191C1203009C7B3B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		87468FD31CCD3B3500DB4A03 /* Chatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chatter.swift; sourceTree = "<group>"; };
-		87468FD41CCD3B3500DB4A03 /* HankHill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HankHill.swift; sourceTree = "<group>"; };
-		87468FD51CCD3B3500DB4A03 /* McClane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = McClane.swift; sourceTree = "<group>"; };
 		87468FD61CCD3B3500DB4A03 /* Yoda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Yoda.swift; sourceTree = "<group>"; };
 		87468FDB1CCD3B6100DB4A03 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		87468FDD1CCD537700DB4A03 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		879EC5101AF2952E00F36F1C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +55,7 @@
 		8739C1B0191C1203009C7B3B = {
 			isa = PBXGroup;
 			children = (
+				87468FDD1CCD537700DB4A03 /* README.md */,
 				8739C1C2191C1203009C7B3B /* chatter */,
 				8739C1BB191C1203009C7B3B /* Frameworks */,
 				8739C1BA191C1203009C7B3B /* Products */,
@@ -135,8 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
-				87468FD51CCD3B3500DB4A03 /* McClane.swift */,
-				87468FD41CCD3B3500DB4A03 /* HankHill.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -208,8 +204,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87468FD81CCD3B3500DB4A03 /* HankHill.swift in Sources */,
-				87468FD91CCD3B3500DB4A03 /* McClane.swift in Sources */,
 				87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
