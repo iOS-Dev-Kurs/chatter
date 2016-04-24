@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Hank: Chatter {
+class HankHill: Chatter {
     
     required init() {
         super.init(image: UIImage(named: "hankhill"))
@@ -24,7 +24,7 @@ class Hank: Chatter {
             Message(content: "I wasn’t flirting with her! I didn’t even mention that I worked in propane.", type: .Statement),
             Message(content: "I can’t enjoy a party until I know where the bathroom is. You knew that when you married me.”", type: .Statement),
             Message(content: "Bobby, if you weren’t my son, I’d hug you.", type: .Statement)
-            ].randomElement()
+        ].randomElement()
     }
     
     override func responseForMessage(message: Message) -> Message {

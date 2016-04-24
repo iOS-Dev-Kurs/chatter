@@ -30,7 +30,7 @@ class ChatViewController: UITableViewController {
         self.tableView.insertRowsAtIndexPaths([ NSIndexPath(forRow: self.tableView.numberOfRowsInSection(0), inSection: 0) ], withRowAnimation: .Fade)
         self.tableView.endUpdates()
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1000), dispatch_get_main_queue()) { () -> Void in
-            self.scrollToBottom(animated: true)
+            self.scrollToBottom(true)
         }
     }
 

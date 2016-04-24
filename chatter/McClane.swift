@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Mcclane: Chatter {
+class McClane: Chatter {
 
     required init() {
         super.init(image: UIImage(named: "mcclane"))

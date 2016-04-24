@@ -9,24 +9,20 @@
 import UIKit
 
 
-enum Side: Printable {
+enum Side: CustomStringConvertible {
     case Left, Right
     
     var description: String {
         switch self {
-        case .Left:
-            return "left"
-        case .Right:
-            return "right"
+        case .Left: return "left"
+        case .Right: return "right"
         }
     }
     
     var nextSide: Side {
         switch self {
-        case .Left:
-            return .Right
-        case .Right:
-            return .Left
+        case .Left: return .Right
+        case .Right: return .Left
         }
     }
 }
@@ -112,8 +108,10 @@ class ViewController: UIViewController {
         }
         alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
         alertController.addAction(UIAlertAction(title: "Set Chatter", style: .Default, handler: { action in
-            let chatterClassName = (alertController.textFields?.first as! UITextField).text
-            if let chatter = (NSBundle.mainBundle().classNamed("chatter." + chatterClassName) as? Chatter.Type)?() {
+            guard let chatterClassName = alertController.textFields?.first?.text else {
+                return
+            }
+            if let chatter = (NSBundle.mainBundle().classNamed("chatter." + chatterClassName) as? Chatter.Type)?.init() {
                 let side: Side = sender === self.leftChatterButton ? .Left : .Right
                 self.chatters[side] = chatter
                 self.configureButtonOnSide(side)

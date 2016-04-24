@@ -45,7 +45,7 @@ class Chatter {
     
     You are encouraged to override this method in a subclass and even implement mechanics to provide a natural follow-up message in a given conversation. In the default implementations, we just pick random messages.
     
-    :returns: A chat message the chat partner can respond to.
+    - returns: A chat message the chat partner can respond to.
     */
     func nextMessage() -> Message {
         return [
@@ -72,9 +72,9 @@ class Chatter {
     
     To make sure the conversation reads naturally, you should at least take the message type into account when choosing a response.
     
-    :param: message The chat message to respond to.
+    - parameter message: The chat message to respond to.
     
-    :returns: A chat message that is a contextual correct response to the given message.
+    - returns: A chat message that is a contextual correct response to the given message.
     */
     func responseForMessage(message: Message) -> Message {
         switch message.type {
@@ -149,7 +149,7 @@ Message instances represent a chat message and the meta data associated with it.
 
 You can use the available properties to configure a text message with additional information that may help to understand the message's content.
 */
-struct Message: Printable {
+struct Message: CustomStringConvertible {
     
     /// The message content
     let content: String
@@ -172,7 +172,7 @@ struct Message: Printable {
 // MARK: - Array Extension
 
 extension Array {
-    func randomElement() -> T {
+    func randomElement() -> Element {
         let randomIndex = Int(arc4random_uniform(UInt32(count)))
         return self[randomIndex]
     }
