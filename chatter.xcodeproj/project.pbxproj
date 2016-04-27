@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160F96C91CD0A9600010F6D0 /* Hurzel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160F96C81CD0A9600010F6D0 /* Hurzel.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		160F96C81CD0A9600010F6D0 /* Hurzel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hurzel.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
+				160F96C81CD0A9600010F6D0 /* Hurzel.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
+				160F96C91CD0A9600010F6D0 /* Hurzel.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
