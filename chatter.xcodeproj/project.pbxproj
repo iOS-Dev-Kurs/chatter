@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
+		8393795B1CD11B9D00E786E8 /* Zocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393795A1CD11B9D00E786E8 /* Zocker.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -18,9 +20,12 @@
 		879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5441AF29DC200F36F1C /* ViewController.swift */; };
 		879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5461AF29DD600F36F1C /* ChatViewController.swift */; };
 		879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */; };
+		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
+		8393795A1CD11B9D00E786E8 /* Zocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zocker.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -36,6 +41,7 @@
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleCell.swift; sourceTree = "<group>"; };
+		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
+				A016F8D31CCE76A80039184B /* Nathan.swift */,
+				1716AF9E1CCE8A7600264EBE /* Obama.swift */,
+				8393795A1CD11B9D00E786E8 /* Zocker.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */,
+				8393795B1CD11B9D00E786E8 /* Zocker.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
+				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
+				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,

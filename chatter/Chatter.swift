@@ -114,6 +114,8 @@ class Chatter {
                 Message(content: "Good one 😉", type: .Statement),
                 Message(content: "😀😀", type: .Statement)
             ].randomElement()
+        default:
+            return Message(content: "Why not", type: .Statement)
         }
     }
     
@@ -159,7 +161,7 @@ struct Message: CustomStringConvertible {
     
     /// The available message types.
     enum MessageType {
-        case Statement, Joke, QuestionBool, QuestionWhy
+        case Statement, Joke, QuestionBool, QuestionWhy, Happy, Annoyed
     }
     
     var description: String {
