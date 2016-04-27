@@ -134,8 +134,8 @@
 		8739C203191C320F009C7B3B /* Chatters */ = {
 			isa = PBXGroup;
 			children = (
-				A016F8D31CCE76A80039184B /* Nathan.swift */,
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
+				A016F8D31CCE76A80039184B /* Nathan.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
