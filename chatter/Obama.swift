@@ -52,6 +52,8 @@ class Obama: Chatter {
                 Message(content: "There was a time when people used to be funny... What happened?", type: .QuestionWhy),
                 Message(content: "Funny guy! You sir, deserve a cookie!", type: .Statement)
             ].randomElement()
+        default:
+            return Message(content: "Not implemented.", type: .Statement)
         }
         
         

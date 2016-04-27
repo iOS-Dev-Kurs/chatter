@@ -18,6 +18,37 @@ It most importantly provides the nextMessage and responseForMessage: methods. Wh
 
 You can also provide an image representation of the character you strive to implement using the designated initializer of this class.
 */
+
+
+
+// Implementation of Topics
+enum Topic : String {
+    case none = "none", Science = "Science", Apples = "Apples", Relativity = "Relativity", Physics = "Physics" // Add Topics here
+    var description: String {
+        switch(self) {
+        case .none:
+            return "none"
+        case .Science:
+            return "Science"
+        case .Apples:
+            return "Apples"
+        case .Relativity:
+            return "Relativity"
+        case .Physics:
+            return "Physics"
+        }
+    }
+}
+// Stores actual topic
+var theCurrentTopic = Topic.none
+
+func changeTopic(changeRequest: Topic) {
+    
+}
+
+
+
+
 class Chatter {
     
     /// Visual representation of the chatter.
@@ -47,6 +78,21 @@ class Chatter {
     
     - returns: A chat message the chat partner can respond to.
     */
+    
+    // Implementation of Topics
+    var possibleTopics: [Topic] = [.none] // Add your Topics here
+    var sayYesToTopicChangeWith = ["Yes, lets talk about that 😊"]
+    var sayNoToTopicChangeWith = ["No, that is not what I want to talk with you about 😡"]
+    var askForATopicChange = ["Lets talk about"]
+    func responseForTopicChange(newTopic: Topic) -> (boolChange: Bool, changeText: String) {
+        if(self.possibleTopics.contains(newTopic)) {
+            return (true, self.sayYesToTopicChangeWith.randomElement())
+        } else {
+            return (false, self.sayNoToTopicChangeWith.randomElement())
+        }
+    }
+    
+    
     func nextMessage() -> Message {
         return [
             Message(content: "Say, do you like butterflies?", type: .QuestionBool),
@@ -114,6 +160,10 @@ class Chatter {
                 Message(content: "Good one 😉", type: .Statement),
                 Message(content: "😀😀", type: .Statement)
             ].randomElement()
+        default:
+            return [
+                Message(content: "Okay, Themawechsel", type: .Statement)
+            ].randomElement()
         }
     }
     
@@ -150,7 +200,6 @@ Message instances represent a chat message and the meta data associated with it.
 You can use the available properties to configure a text message with additional information that may help to understand the message's content.
 */
 struct Message: CustomStringConvertible {
-    
     /// The message content
     let content: String
     
@@ -159,7 +208,7 @@ struct Message: CustomStringConvertible {
     
     /// The available message types.
     enum MessageType {
-        case Statement, Joke, QuestionBool, QuestionWhy
+        case Statement, Joke, QuestionBool, QuestionWhy, changeTopic
     }
     
     var description: String {

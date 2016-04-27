@@ -62,6 +62,8 @@ class Nathan: Chatter {
                 Message(content: "Are you sure about this?", type: .QuestionBool),
                 Message(content: "What does that mean?!", type: .Statement)
                 ].randomElement()
+        default:
+            return Message(content: "Not implemented.", type: .Statement)
         }
     }
     

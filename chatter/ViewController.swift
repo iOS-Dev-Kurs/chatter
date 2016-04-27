@@ -77,20 +77,58 @@ class ViewController: UIViewController {
         self.lastMessage = nil
     }
     
+    @IBOutlet weak var LabelForTopic: UILabel!
+    private func setTopicToHead(newTopic: Topic) -> Void {
+        if(newTopic != Topic.none) {
+            LabelForTopic.text = "Topic: " + newTopic.description
+        } else {
+            LabelForTopic.text = ""
+        }
+    }
     
     // MARK: User Interaction
     
     private var activeSide: Side = .Left
     private var lastMessage: Message?
     
+    private var isChangeAskedTopic = false
+    private var TopicToChange = Topic.none
+    
     @IBAction func chatButtonPressed(sender: AnyObject) {
+        
         if let chatter = chatters[activeSide] {
             if let lastMessage = lastMessage {
-                let response = chatter.responseForMessage(lastMessage)
+                var response: Message
+                // Implement Topic
+                if(self.isChangeAskedTopic) {
+                    let returnOfTopicChange = chatter.responseForTopicChange(self.TopicToChange)
+                    if(returnOfTopicChange.boolChange) {
+                        theCurrentTopic = self.TopicToChange
+                        self.setTopicToHead(theCurrentTopic)
+                        response = Message(content: chatter.sayYesToTopicChangeWith.randomElement(), type: .Statement)
+                    } else {
+                        response = Message(content: chatter.sayNoToTopicChangeWith.randomElement(), type: .Statement)
+                    }
+                    self.isChangeAskedTopic = false
+                    self.TopicToChange = Topic.none
+                }
+                else {
+                    response = chatter.responseForMessage(lastMessage)
+                }
                 chatViewController.presentMessage(response, onSide: activeSide)
                 self.lastMessage = nil
+                
             }
-            let message = chatter.nextMessage()
+            var message = chatter.nextMessage()
+            // Next Change Topic?
+            if(message.type == Message.MessageType.changeTopic) {
+                if let askedTopic = Topic(rawValue: message.description) {
+                    message = Message(content: chatter.askForATopicChange.randomElement() + " " + askedTopic.description, type: .Statement)
+                    self.isChangeAskedTopic = true
+                    self.TopicToChange = askedTopic
+                }
+                
+            }
             chatViewController.presentMessage(message, onSide: activeSide)
             self.lastMessage = message
             activeSide = activeSide.nextSide
