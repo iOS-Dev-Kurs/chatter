@@ -16,19 +16,17 @@ class Hurzel: Chatter {
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "Do. Or do not. There is no try.", type: .Statement),
-            Message(content: "May the force be with you.", type: .Statement),
-            Message(content: "Wars not make one great.", type: .Statement),
-            Message(content: "Judge me by my size, do you?", type: .QuestionBool),
-            Message(content: "Patience you must have, my young padawan.", type: .Statement),
-            Message(content: "Powerful you have become, the dark side I sense in you.", type: .Statement),
-            Message(content: "Train yourself to let go of everything you fear to lose.", type: .Statement),
-            Message(content: "You must unlearn what you have learned.", type: .Statement)
+            Message(content: "You never know.", type: .Statement),
+            Message(content: "Didn't get that.", type: .Statement),
+            Message(content: "Am I too stupid for this?", type: .QuestionBool),
+            Message(content: "Let's call it Eggy!", type: .Statement),
+            Message(content: "What a hack!", type: .Statement),
+            Message(content: "<3 me?", type: .QuestionBool),
             ].randomElement()
     }
     
     override func responseForMessage(message: Message) -> Message {
-        return Message(content: "Hmm...", type: .Statement)
+        return Message(content: "Öhhhhh ....", type: .Statement)
     }
     
     
