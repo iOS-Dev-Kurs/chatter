@@ -109,7 +109,7 @@
                                     <constraint firstItem="cKq-yg-9j7" firstAttribute="top" secondItem="DRM-Zn-cJC" secondAttribute="top" constant="8" id="wDC-7r-fkc"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iL-ct-bjO">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0iL-ct-bjO">
                                 <rect key="frame" x="0.0" y="64" width="600" height="34"/>
                                 <color key="backgroundColor" red="0.40641077510000001" green="0.6558854046" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -123,8 +123,10 @@
                             <constraint firstItem="DRM-Zn-cJC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="FEr-ST-dfS"/>
                             <constraint firstAttribute="trailing" secondItem="DRM-Zn-cJC" secondAttribute="trailing" id="GU6-E5-sfp"/>
                             <constraint firstItem="baC-Zi-Z7F" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="O7r-W0-A1K"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0iL-ct-bjO" secondAttribute="trailing" id="QRd-eb-nqe"/>
                             <constraint firstAttribute="trailing" secondItem="baC-Zi-Z7F" secondAttribute="trailing" id="Qqw-qg-ukd"/>
                             <constraint firstItem="DRM-Zn-cJC" firstAttribute="top" secondItem="baC-Zi-Z7F" secondAttribute="bottom" id="bwg-UG-wh3"/>
+                            <constraint firstItem="0iL-ct-bjO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dWu-Gq-Z8R"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DRM-Zn-cJC" secondAttribute="bottom" id="fMZ-1q-XiP"/>
                         </constraints>
                     </view>
