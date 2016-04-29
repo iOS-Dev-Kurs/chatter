@@ -177,11 +177,6 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Universität Heidelberg";
-				TargetAttributes = {
-					8739C1B8191C1203009C7B3B = {
-						DevelopmentTeam = LPZ9E7CD7F;
-					};
-				};
 			};
 			buildConfigurationList = 8739C1B4191C1203009C7B3B /* Build configuration list for PBXProject "chatter" */;
 			compatibilityVersion = "Xcode 3.2";
