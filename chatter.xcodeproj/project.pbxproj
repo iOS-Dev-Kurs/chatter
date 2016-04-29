@@ -18,6 +18,7 @@
 		879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5441AF29DC200F36F1C /* ViewController.swift */; };
 		879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5461AF29DD600F36F1C /* ChatViewController.swift */; };
 		879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */; };
+		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleCell.swift; sourceTree = "<group>"; };
+		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
+				A2AB56611CD35B40006999FD /* Homer.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			files = (
 				87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
+				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
