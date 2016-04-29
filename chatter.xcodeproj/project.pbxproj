@@ -19,6 +19,7 @@
 		879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5441AF29DC200F36F1C /* ViewController.swift */; };
 		879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5461AF29DD600F36F1C /* ChatViewController.swift */; };
 		879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */; };
+		9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE6CC1CD3457F0074771D /* Sheldon.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		879EC5441AF29DC200F36F1C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleCell.swift; sourceTree = "<group>"; };
+		9DCCE6CC1CD3457F0074771D /* Sheldon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheldon.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
 				A016F8D31CCE76A80039184B /* Nathan.swift */,
 				1716AF9E1CCE8A7600264EBE /* Obama.swift */,
+				9DCCE6CC1CD3457F0074771D /* Sheldon.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -174,6 +177,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Universität Heidelberg";
+				TargetAttributes = {
+					8739C1B8191C1203009C7B3B = {
+						DevelopmentTeam = LPZ9E7CD7F;
+					};
+				};
 			};
 			buildConfigurationList = 8739C1B4191C1203009C7B3B /* Build configuration list for PBXProject "chatter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -217,6 +225,7 @@
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
+				9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,10 +305,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,10 +321,12 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
