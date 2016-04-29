@@ -21,6 +21,8 @@ class Sheldon: Chatter {
         case .Statement:
             return [
                 Message(content: "Does it affect me?", type: .QuestionBool),
+                Message(content: "It took you 4 years to get through high school?", type: .QuestionBool),
+                Message(content: "What do you think their combined IQ is ?", type: .Statement),
                 Message(content: "I made tea.", type: .Statement),
                 Message(content: "Don't be silly, I'm a fan of anything that tries to replace actual human contact.", type: .Statement),
                 Message(content: "If that happens, don't make me wait ten years to watch you eat a tin can.", type: .Statement),
@@ -39,6 +41,8 @@ class Sheldon: Chatter {
         case .QuestionBool:
             return [
                 Message(content: "No, you don't screw the roommate agreement. The roommate agreement screws you.", type: .Statement),
+                Message(content: "Yes, it tells us that you participate in the mass cultural delusion that the suns apparent position relative to arbitrarily defined constellations at the time of your birth somehow affects your personality.", type: .Statement),
+                Message(content: "I want to say no, but it's too glorious.", type: .Statement),
                 Message(content: "Of course not. Even in my sleep-deprived state, I've managed to pull off another one of my classic pranks. Bazinga!", type: .Statement),
                 Message(content: "I do. Now, let's find the kind of gift that makes her feel small and worthless.", type: .Statement),
                 Message(content: "No, the X-men were named for the X in Charles Xavier. Since I am Sheldon Cooper, you will be my C-men.", type: .Statement),
@@ -75,6 +79,7 @@ class Sheldon: Chatter {
     
     override func nextMessage() -> Message {
         return [
+            Message(content: "That's my spot! In the winter that seat is close enough to the radiator to remain warm, and yet not so close as to cause perspiration. In the summer it's directly in the path of a cross breeze created by open windows there, and there. It faces the television at an angle that is neither direct, thus discouraging conversation, nor so far wide to create a parallax distortion.", type: .Statement),
             Message(content: "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.", type: .Statement),
             Message(content: "Well, today we tried masturbating for money.", type: .Statement),
             Message(content: "Do you want to hear an interesting thing about stairs?", type: .QuestionBool),
