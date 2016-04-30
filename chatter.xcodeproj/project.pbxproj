@@ -10,6 +10,7 @@
 		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
 		3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A1351CD3FD4500A5DD4F /* Minion.swift */; };
 		3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A13B1CD4010200A5DD4F /* Barney.swift */; };
+		79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8A7621CD0072100C7A040 /* Sherlock.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -31,6 +32,7 @@
 		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
 		3284A1351CD3FD4500A5DD4F /* Minion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minion.swift; sourceTree = "<group>"; };
 		3284A13B1CD4010200A5DD4F /* Barney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barney.swift; sourceTree = "<group>"; };
+		79A8A7621CD0072100C7A040 /* Sherlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sherlock.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -154,6 +156,7 @@
 				A2AB56611CD35B40006999FD /* Homer.swift */,
 				3284A1351CD3FD4500A5DD4F /* Minion.swift */,
 				3284A13B1CD4010200A5DD4F /* Barney.swift */,
+				79A8A7621CD0072100C7A040 /* Sherlock.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */,
 				9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */,
 				3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */,
+				79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
