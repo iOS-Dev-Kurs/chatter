@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
+		3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A1351CD3FD4500A5DD4F /* Minion.swift */; };
+		3284A1381CD3FDF100A5DD4F /* minion.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3284A1371CD3FDF100A5DD4F /* minion.jpg */; };
+		3284A13A1CD400BA00A5DD4F /* barneystinson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3284A1391CD400BA00A5DD4F /* barneystinson.jpg */; };
+		3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A13B1CD4010200A5DD4F /* Barney.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -27,6 +31,10 @@
 
 /* Begin PBXFileReference section */
 		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
+		3284A1351CD3FD4500A5DD4F /* Minion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minion.swift; sourceTree = "<group>"; };
+		3284A1371CD3FDF100A5DD4F /* minion.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = minion.jpg; path = ../../../Desktop/minion.jpg; sourceTree = "<group>"; };
+		3284A1391CD400BA00A5DD4F /* barneystinson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = barneystinson.jpg; path = ../../../Downloads/barneystinson.jpg; sourceTree = "<group>"; };
+		3284A13B1CD4010200A5DD4F /* Barney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barney.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,6 +107,8 @@
 				8739C1F9191C1256009C7B3B /* View */,
 				8739C1F8191C1244009C7B3B /* Controller */,
 				8739C1D7191C1203009C7B3B /* Images.xcassets */,
+				3284A1391CD400BA00A5DD4F /* barneystinson.jpg */,
+				3284A1371CD3FDF100A5DD4F /* minion.jpg */,
 				8739C1C3191C1203009C7B3B /* Supporting Files */,
 			);
 			path = chatter;
@@ -148,6 +158,8 @@
 				9DCCE6CC1CD3457F0074771D /* Sheldon.swift */,
 				9D20C8091CD3BE9400C54F73 /* StarTrek.swift */,
 				A2AB56611CD35B40006999FD /* Homer.swift */,
+				3284A1351CD3FD4500A5DD4F /* Minion.swift */,
+				3284A13B1CD4010200A5DD4F /* Barney.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -183,6 +195,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Universität Heidelberg";
+				TargetAttributes = {
+					8739C1B8191C1203009C7B3B = {
+						DevelopmentTeam = LS389VJ9WF;
+					};
+				};
 			};
 			buildConfigurationList = 8739C1B4191C1203009C7B3B /* Build configuration list for PBXProject "chatter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -208,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8739C1D8191C1203009C7B3B /* Images.xcassets in Resources */,
+				3284A1381CD3FDF100A5DD4F /* minion.jpg in Resources */,
 				87468FDC1CCD3B6100DB4A03 /* Main.storyboard in Resources */,
+				3284A13A1CD400BA00A5DD4F /* barneystinson.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +247,9 @@
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
+				3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */,
 				9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */,
+				3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +332,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -327,7 +348,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
