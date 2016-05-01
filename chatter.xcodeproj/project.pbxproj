@@ -29,7 +29,7 @@
 		9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE6CC1CD3457F0074771D /* Sheldon.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
-		BF5A90411CD6C4710033DBD8 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A90401CD6C4710033DBD8 /* Batman.swift */; };
+		BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A90421CD6C5A00033DBD8 /* Batman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,7 @@
 		9DCCE6CC1CD3457F0074771D /* Sheldon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheldon.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
-		BF5A90401CD6C4710033DBD8 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Batman.swift; path = ../../../.Trash/chatter/Batman.swift; sourceTree = "<group>"; };
+		BF5A90421CD6C5A00033DBD8 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,7 +168,7 @@
 				77989E491CCFDB0F00AB13A3 /* Hodor.swift */,
 				7730A5311CD6614B0064B499 /* Redneck.swift */,
 				7730A5331CD668D10064B499 /* Trump.swift */,
-				BF5A90401CD6C4710033DBD8 /* Batman.swift */,
+				BF5A90421CD6C5A00033DBD8 /* Batman.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
 				7730A5321CD6614B0064B499 /* Redneck.swift in Sources */,
 				77989E4A1CCFDB1000AB13A3 /* Hodor.swift in Sources */,
-				BF5A90411CD6C4710033DBD8 /* Batman.swift in Sources */,
+				BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
 				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
