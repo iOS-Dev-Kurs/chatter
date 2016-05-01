@@ -30,12 +30,10 @@ class Sheldon: Chatter {
                 Message(content: "Who would ever guess that?", type: .Statement),
                 Message(content: "Thankfully all the things my girlfriend used to do can be taken care of with my right hand.", type: .Statement),
                 Message(content: "Not to mention imaginary.", type: .Statement),
-                Message(content: "I look forward to your next birthday when we do it again!", type: .Statement),
                 Message(content: "Sarcasm?", type: .QuestionBool),
                 Message(content: "“Not knowing is part of the fun.” Was that the motto of your community college?", type: .QuestionBool),
                 Message(content: "Was the starfish wearing boxer shorts? Because you might have been watching Nickelodeon.", type: .QuestionBool),
-                Message(content: "How on earth can you say “dirty sock” and “relax” in the same sentence?", type: .QuestionWhy),
-                Message(content: "I'm not crazy, my mother had me tested.", type: .Statement),
+                Message(content: "How on earth can you say “dirty sock” and “relax” in the same sentence?", type: .QuestionWhy)
             ].randomElement();
             
         case .QuestionBool:
@@ -81,10 +79,12 @@ class Sheldon: Chatter {
         return [
             Message(content: "That's my spot! In the winter that seat is close enough to the radiator to remain warm, and yet not so close as to cause perspiration. In the summer it's directly in the path of a cross breeze created by open windows there, and there. It faces the television at an angle that is neither direct, thus discouraging conversation, nor so far wide to create a parallax distortion.", type: .Statement),
             Message(content: "Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.", type: .Statement),
+            Message(content: "I'm not crazy, my mother had me tested.", type: .Statement),
             Message(content: "Well, today we tried masturbating for money.", type: .Statement),
             Message(content: "Do you want to hear an interesting thing about stairs?", type: .QuestionBool),
             Message(content: "(knock, knock, knock) Penny? (knock, knock, knock) Penny? (knock, knock, knock) Penny?", type: .Statement),
-            Message(content: "If the height of a step is off by as little as two millimeters, most people will trip.", type: .Statement)
+            Message(content: "If the height of a step is off by as little as two millimeters, most people will trip.", type: .Statement),
+            Message(content: "I look forward to your next birthday when we do it again!", type: .Statement)
             ].randomElement()
     }
     
