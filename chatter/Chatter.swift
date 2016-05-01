@@ -35,6 +35,8 @@ class Chatter {
         return NSStringFromClass(self.dynamicType).componentsSeparatedByString(".").last!
     }
     
+    var mood: Int = 0
+    
     
     // MARK: Chatting
 
@@ -77,6 +79,9 @@ class Chatter {
     - returns: A chat message that is a contextual correct response to the given message.
     */
     func responseForMessage(message: Message) -> Message {
+
+        
+        
         switch message.type {
         case .Statement:
             return [
@@ -115,6 +120,12 @@ class Chatter {
                 Message(content: "😀😀", type: .Statement)
             ].randomElement()
         }
+    }
+    func changeMood(message: Message) -> Int {
+        
+        // last message influences on mood (in case values are set)
+        mood = mood + (message.friendliness)!
+        return mood
     }
     
 }
@@ -162,8 +173,22 @@ struct Message: CustomStringConvertible {
         case Statement, Joke, QuestionBool, QuestionWhy
     }
     
+    /// let friendliness of message influence the mood of the chatter
+    var friendliness: Int?
+    
     var description: String {
         return content
+    }
+    
+    init(content: String, type: MessageType) {
+        self.content = content
+        self.type = type
+    }
+    
+    init(content: String, type: MessageType, friendliness: Int?) {
+        self.content = content
+        self.type = type
+        self.friendliness = friendliness
     }
     
 }

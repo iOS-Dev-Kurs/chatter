@@ -26,6 +26,7 @@
 		9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE6CC1CD3457F0074771D /* Sheldon.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
+		A3B00DEB1CD55CBE00B7117A /* Oettinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B00DEA1CD55CBE00B7117A /* Oettinger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		9DCCE6CC1CD3457F0074771D /* Sheldon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheldon.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
+		A3B00DEA1CD55CBE00B7117A /* Oettinger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Oettinger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				9DCCE6CC1CD3457F0074771D /* Sheldon.swift */,
 				9D20C8091CD3BE9400C54F73 /* StarTrek.swift */,
 				A2AB56611CD35B40006999FD /* Homer.swift */,
+				A3B00DEA1CD55CBE00B7117A /* Oettinger.swift */,
 				3284A1351CD3FD4500A5DD4F /* Minion.swift */,
 				3284A13B1CD4010200A5DD4F /* Barney.swift */,
 				79A8A7621CD0072100C7A040 /* Sherlock.swift */,
@@ -192,6 +195,11 @@
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Universität Heidelberg";
+				TargetAttributes = {
+					8739C1B8191C1203009C7B3B = {
+						DevelopmentTeam = 57G2ZY49JR;
+					};
+				};
 			};
 			buildConfigurationList = 8739C1B4191C1203009C7B3B /* Build configuration list for PBXProject "chatter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -232,6 +240,7 @@
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				9D20C80A1CD3BE9400C54F73 /* StarTrek.swift in Sources */,
 				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
+				A3B00DEB1CD55CBE00B7117A /* Oettinger.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
 				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
@@ -323,6 +332,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nikolai.krischkegmail.com;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -339,6 +349,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nikolai.krischkegmail.com;
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
