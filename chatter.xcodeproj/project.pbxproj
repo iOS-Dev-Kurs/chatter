@@ -10,10 +10,10 @@
 		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
 		3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A1351CD3FD4500A5DD4F /* Minion.swift */; };
 		3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A13B1CD4010200A5DD4F /* Barney.swift */; };
-		79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8A7621CD0072100C7A040 /* Sherlock.swift */; };
 		7730A5321CD6614B0064B499 /* Redneck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730A5311CD6614B0064B499 /* Redneck.swift */; };
 		7730A5341CD668D10064B499 /* Trump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730A5331CD668D10064B499 /* Trump.swift */; };
 		77989E4A1CCFDB1000AB13A3 /* Hodor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77989E491CCFDB0F00AB13A3 /* Hodor.swift */; };
+		79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8A7621CD0072100C7A040 /* Sherlock.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -29,16 +29,17 @@
 		9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE6CC1CD3457F0074771D /* Sheldon.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
+		E9DD170D1CD6C2DA004F614F /* Magic Conch Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
 		3284A1351CD3FD4500A5DD4F /* Minion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minion.swift; sourceTree = "<group>"; };
 		3284A13B1CD4010200A5DD4F /* Barney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barney.swift; sourceTree = "<group>"; };
-		79A8A7621CD0072100C7A040 /* Sherlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sherlock.swift; sourceTree = "<group>"; };
 		7730A5311CD6614B0064B499 /* Redneck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Redneck.swift; sourceTree = "<group>"; };
 		7730A5331CD668D10064B499 /* Trump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trump.swift; sourceTree = "<group>"; };
 		77989E491CCFDB0F00AB13A3 /* Hodor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hodor.swift; sourceTree = "<group>"; };
+		79A8A7621CD0072100C7A040 /* Sherlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sherlock.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,6 +59,7 @@
 		9DCCE6CC1CD3457F0074771D /* Sheldon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheldon.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
+		E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Magic Conch Shell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				77989E491CCFDB0F00AB13A3 /* Hodor.swift */,
 				7730A5311CD6614B0064B499 /* Redneck.swift */,
 				7730A5331CD668D10064B499 /* Trump.swift */,
+				E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
+				E9DD170D1CD6C2DA004F614F /* Magic Conch Shell.swift in Sources */,
 				7730A5341CD668D10064B499 /* Trump.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
 				3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */,
@@ -341,7 +345,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.ios-dev-kurs.chatter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -359,7 +362,6 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.chatter.cotchere";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.ios-dev-kurs.chatter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
