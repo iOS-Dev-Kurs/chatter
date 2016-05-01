@@ -15,7 +15,7 @@ class Oettinger: Chatter {
     required init(){
         super.init(image: UIImage(named: "oettinger"))
         // set initial mood of oettinger to 2 because he looks funny
-        // self.mood = 2
+        self.mood = 2
     }
     
     

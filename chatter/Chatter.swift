@@ -79,9 +79,7 @@ class Chatter {
     - returns: A chat message that is a contextual correct response to the given message.
     */
     func responseForMessage(message: Message) -> Message {
-        
-        // last message influences on mood (in case values are set)
-        mood = mood + (message.friendliness)!
+
         
         
         switch message.type {
@@ -122,6 +120,12 @@ class Chatter {
                 Message(content: "😀😀", type: .Statement)
             ].randomElement()
         }
+    }
+    func changeMood(message: Message) -> Int {
+        
+        // last message influences on mood (in case values are set)
+        mood = mood + (message.friendliness)!
+        return mood
     }
     
 }
