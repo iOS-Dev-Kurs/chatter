@@ -161,7 +161,7 @@ struct Message: CustomStringConvertible {
     
     /// The available message types.
     enum MessageType {
-        case Statement, Joke, QuestionBool, QuestionWhy, Happy, Annoyed
+        case Statement, Joke, QuestionBool, QuestionWhy
     }
     
     var description: String {

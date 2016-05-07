@@ -20,10 +20,10 @@ class Zocker: Chatter {
             Message(content: "Why don't they kick him?! He's such a cheater!", type: .QuestionBool),
             Message(content: "Do you use the internet? I loose all the time", type: .QuestionBool),
             Message(content: "Real gamer do not clean up, they defragment", type: .Joke),
-            Message(content: "Yeah, I got it!!", type: .Happy),
-            Message(content: "...", type: .Annoyed),
-            Message(content: "Look, this is it!", type: .Happy),
-            Message(content: "I won't play this $@!/ing game anymore!", type: .Annoyed),
+            Message(content: "Yeah, I got it!!", type: .Statement),
+            Message(content: "...", type: .Statement),
+            Message(content: "Look, this is it!", type: .Statement),
+            Message(content: "I won't play this $@!/ing game anymore!", type: .Statement),
             Message(content: "Get Nintendo or change the system...", type: .Joke),
             Message(content: "I'll jump out of this windows!!", type: .Statement)
             
