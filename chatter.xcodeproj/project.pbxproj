@@ -20,6 +20,7 @@
 		879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5461AF29DD600F36F1C /* ChatViewController.swift */; };
 		879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
+		E9F8BC3A1CD2B0E3000FCAB9 /* Trump.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F8BC391CD2B0E3000FCAB9 /* Trump.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		879EC5461AF29DD600F36F1C /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		879EC5481AF2A08300F36F1C /* ChatBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatBubbleCell.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
+		E9F8BC391CD2B0E3000FCAB9 /* Trump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trump.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
 				A016F8D31CCE76A80039184B /* Nathan.swift */,
 				1716AF9E1CCE8A7600264EBE /* Obama.swift */,
+				E9F8BC391CD2B0E3000FCAB9 /* Trump.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
+				E9F8BC3A1CD2B0E3000FCAB9 /* Trump.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
 			);
