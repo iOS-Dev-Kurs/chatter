@@ -14,6 +14,7 @@
 		7730A5341CD668D10064B499 /* Trump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730A5331CD668D10064B499 /* Trump.swift */; };
 		77989E4A1CCFDB1000AB13A3 /* Hodor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77989E491CCFDB0F00AB13A3 /* Hodor.swift */; };
 		79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79A8A7621CD0072100C7A040 /* Sherlock.swift */; };
+		8393795B1CD11B9D00E786E8 /* Zocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8393795A1CD11B9D00E786E8 /* Zocker.swift */; };
 		8739C1BD191C1203009C7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BC191C1203009C7B3B /* Foundation.framework */; };
 		8739C1BF191C1203009C7B3B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1BE191C1203009C7B3B /* CoreGraphics.framework */; };
 		8739C1C1191C1203009C7B3B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8739C1C0191C1203009C7B3B /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 		7730A5331CD668D10064B499 /* Trump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trump.swift; sourceTree = "<group>"; };
 		77989E491CCFDB0F00AB13A3 /* Hodor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hodor.swift; sourceTree = "<group>"; };
 		79A8A7621CD0072100C7A040 /* Sherlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sherlock.swift; sourceTree = "<group>"; };
+		8393795A1CD11B9D00E786E8 /* Zocker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zocker.swift; sourceTree = "<group>"; };
 		8739C1B9191C1203009C7B3B /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8739C1BC191C1203009C7B3B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8739C1BE191C1203009C7B3B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -178,6 +180,7 @@
 				87DC34E51CEA18A000AC0EE6 /* Teenager.swift */,
 				E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */,
 				BF5A90421CD6C5A00033DBD8 /* Batman.swift */,
+				8393795A1CD11B9D00E786E8 /* Zocker.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87468FDA1CCD3B3500DB4A03 /* Yoda.swift in Sources */,
+				8393795B1CD11B9D00E786E8 /* Zocker.swift in Sources */,
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				9D20C80A1CD3BE9400C54F73 /* StarTrek.swift in Sources */,
 				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
