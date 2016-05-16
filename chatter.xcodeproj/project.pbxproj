@@ -31,6 +31,7 @@
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 		DC161D081CD60CE7001ADBC4 /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC161D071CD60CE7001ADBC4 /* Seneca.swift */; };
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
+		E9DD170D1CD6C2DA004F614F /* Magic Conch Shell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 		DC161D071CD60CE7001ADBC4 /* Seneca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
+		E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Magic Conch Shell.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				7730A5311CD6614B0064B499 /* Redneck.swift */,
 				7730A5331CD668D10064B499 /* Trump.swift */,
 				87DC34E51CEA18A000AC0EE6 /* Teenager.swift */,
+				E9DD170C1CD6C2DA004F614F /* Magic Conch Shell.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				DC161D081CD60CE7001ADBC4 /* Seneca.swift in Sources */,
 				1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */,
 				879EC5471AF29DD600F36F1C /* ChatViewController.swift in Sources */,
+				E9DD170D1CD6C2DA004F614F /* Magic Conch Shell.swift in Sources */,
 				7730A5341CD668D10064B499 /* Trump.swift in Sources */,
 				879EC5491AF2A08300F36F1C /* ChatBubbleCell.swift in Sources */,
 				3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */,
