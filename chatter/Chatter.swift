@@ -114,8 +114,6 @@ class Chatter {
                 Message(content: "Good one 😉", type: .Statement),
                 Message(content: "😀😀", type: .Statement)
             ].randomElement()
-        default:
-            return Message(content: "Why not", type: .Statement)
         }
     }
     

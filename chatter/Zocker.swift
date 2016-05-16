@@ -67,8 +67,6 @@ class Zocker: Chatter {
             return Message(content: "...", type: .Statement)
         case .Joke:
             return Message(content: "I already knew this one..", type: .Statement)
-        default:
-            return Message(content: "I'm hungry..", type: .Statement)
         }
         
     }
