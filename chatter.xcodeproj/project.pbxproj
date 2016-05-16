@@ -32,6 +32,7 @@
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
 		DC161D081CD60CE7001ADBC4 /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC161D071CD60CE7001ADBC4 /* Seneca.swift */; };
 		E9DD170D1CD6C2DA004F614F /* MagicConchShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */; };
+		BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A90421CD6C5A00033DBD8 /* Batman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
 		DC161D071CD60CE7001ADBC4 /* Seneca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
 		E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicConchShell.swift; sourceTree = "<group>"; };
+		BF5A90421CD6C5A00033DBD8 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 				7730A5331CD668D10064B499 /* Trump.swift */,
 				87DC34E51CEA18A000AC0EE6 /* Teenager.swift */,
 				E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */,
+				BF5A90421CD6C5A00033DBD8 /* Batman.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
 				7730A5321CD6614B0064B499 /* Redneck.swift in Sources */,
 				77989E4A1CCFDB1000AB13A3 /* Hodor.swift in Sources */,
+				BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */,
 				87468FD71CCD3B3500DB4A03 /* Chatter.swift in Sources */,
 				A016F8D41CCE76A80039184B /* Nathan.swift in Sources */,
 				DC161D081CD60CE7001ADBC4 /* Seneca.swift in Sources */,
