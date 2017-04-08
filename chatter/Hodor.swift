@@ -16,14 +16,14 @@ class Hodor: Chatter {
 	
 	override func nextMessage() -> Message {
 		return [
-			Message(content: "Hodor.", type: .Statement),
-			Message(content: "Hodor?", type: .QuestionBool),
-			Message(content: "Hodor!", type: .Statement),
+			Message(content: "Hodor.", type: .statement),
+			Message(content: "Hodor?", type: .questionBool),
+			Message(content: "Hodor!", type: .statement),
 			].randomElement()
 	}
 	
-	override func responseForMessage(message: Message) -> Message {
-		return Message(content: "", type: .Statement)
+	override func responseForMessage(_ message: Message) -> Message {
+		return Message(content: "", type: .statement)
 	}
 	
 }

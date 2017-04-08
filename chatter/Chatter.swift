@@ -32,7 +32,7 @@ class Chatter {
     }
     
     var name: String {
-        return NSStringFromClass(self.dynamicType).componentsSeparatedByString(".").last!
+        return NSStringFromClass(type(of: self)).components(separatedBy: ".").last!
     }
     
     
@@ -49,19 +49,19 @@ class Chatter {
     */
     func nextMessage() -> Message {
         return [
-            Message(content: "Say, do you like butterflies?", type: .QuestionBool),
-            Message(content: "Did YOU like the last Harry Potter movie?", type: .QuestionBool),
-            Message(content: "Why THE HELL are you saying that?", type: .QuestionWhy),
-            Message(content: "Are we really that close?", type: .QuestionBool),
-            Message(content: "Two photons go into a bar... argh I forget the rest ", type: .Joke),
-            Message(content: "I like to move it, move it.", type: .Statement),
-            Message(content: "This is weird.", type: .Statement),
-            Message(content: "I always thought, the lemon is an underrated fruit. Care to weigh in?", type: .Statement),
-            Message(content: "Are you alway like this?", type: .QuestionBool),
-            Message(content: "Now I am confused...", type: .Statement),
-            Message(content: "Time flies like an arrow; fruit flies like a banana. Get it ? ;)", type: .Joke),
-            Message(content: "Why?!", type: .QuestionWhy),
-            Message(content: "❤️❤️❤️", type: .Statement),
+            Message(content: "Say, do you like butterflies?", type: .questionBool),
+            Message(content: "Did YOU like the last Harry Potter movie?", type: .questionBool),
+            Message(content: "Why THE HELL are you saying that?", type: .questionWhy),
+            Message(content: "Are we really that close?", type: .questionBool),
+            Message(content: "Two photons go into a bar... argh I forget the rest ", type: .joke),
+            Message(content: "I like to move it, move it.", type: .statement),
+            Message(content: "This is weird.", type: .statement),
+            Message(content: "I always thought, the lemon is an underrated fruit. Care to weigh in?", type: .statement),
+            Message(content: "Are you alway like this?", type: .questionBool),
+            Message(content: "Now I am confused...", type: .statement),
+            Message(content: "Time flies like an arrow; fruit flies like a banana. Get it ? ;)", type: .joke),
+            Message(content: "Why?!", type: .questionWhy),
+            Message(content: "❤️❤️❤️", type: .statement),
         ].randomElement()
     }
 
@@ -76,43 +76,43 @@ class Chatter {
     
     - returns: A chat message that is a contextual correct response to the given message.
     */
-    func responseForMessage(message: Message) -> Message {
+    func responseForMessage(_ message: Message) -> Message {
         switch message.type {
-        case .Statement:
+        case .statement:
             return [
-                Message(content: "You said it, not me...", type: .Statement),
-                Message(content: "Absolutely!", type: .Statement),
-                Message(content: "That's just weird.", type: .Statement),
-                Message(content: "Oh, really?!", type: .QuestionBool),
-                Message(content: "That's YOUR point of view.", type: .Statement),
-                Message(content: "What?! I think I spider.", type: .Statement),
-                Message(content: "👍", type: .Statement)
+                Message(content: "You said it, not me...", type: .statement),
+                Message(content: "Absolutely!", type: .statement),
+                Message(content: "That's just weird.", type: .statement),
+                Message(content: "Oh, really?!", type: .questionBool),
+                Message(content: "That's YOUR point of view.", type: .statement),
+                Message(content: "What?! I think I spider.", type: .statement),
+                Message(content: "👍", type: .statement)
                 ].randomElement()
-        case .QuestionBool:
+        case .questionBool:
             return [
-                Message(content: "Of course not!", type: .Statement),
-                Message(content: "Yeah, I think so.", type: .Statement),
-                Message(content: "Definitely. But that's a good thing 😉", type: .Statement),
-                Message(content: "YOLO!", type: .Statement)
+                Message(content: "Of course not!", type: .statement),
+                Message(content: "Yeah, I think so.", type: .statement),
+                Message(content: "Definitely. But that's a good thing 😉", type: .statement),
+                Message(content: "YOLO!", type: .statement)
             ].randomElement()
-        case .QuestionWhy:
+        case .questionWhy:
             return [
-                Message(content: "Just because I can!", type: .Statement),
-                Message(content: "Because that's the way it is.", type: .Statement),
-                Message(content: "Who knows?!", type: .Statement),
-                Message(content: "Just accept it, buddy.", type: .Statement),
-                Message(content: "I have never given it much thought...", type: .Statement),
-                Message(content: "Hmm, I am not quite sure... but it IS an interesting question.", type: .Statement),
-                Message(content: "Erm, why not?!", type: .Statement),
-                Message(content: "Only God knows why...", type: .Statement)
+                Message(content: "Just because I can!", type: .statement),
+                Message(content: "Because that's the way it is.", type: .statement),
+                Message(content: "Who knows?!", type: .statement),
+                Message(content: "Just accept it, buddy.", type: .statement),
+                Message(content: "I have never given it much thought...", type: .statement),
+                Message(content: "Hmm, I am not quite sure... but it IS an interesting question.", type: .statement),
+                Message(content: "Erm, why not?!", type: .statement),
+                Message(content: "Only God knows why...", type: .statement)
             ].randomElement()
-        case .Joke:
+        case .joke:
             return [
-                Message(content: "Is that supposed to be funny?! 😠", type: .QuestionBool),
-                Message(content: "HAHA, you are killing me 😄", type: .Statement),
-                Message(content: "rofl 😆", type: .Statement),
-                Message(content: "Good one 😉", type: .Statement),
-                Message(content: "😀😀", type: .Statement)
+                Message(content: "Is that supposed to be funny?! 😠", type: .questionBool),
+                Message(content: "HAHA, you are killing me 😄", type: .statement),
+                Message(content: "rofl 😆", type: .statement),
+                Message(content: "Good one 😉", type: .statement),
+                Message(content: "😀😀", type: .statement)
             ].randomElement()
         }
     }
@@ -159,7 +159,7 @@ struct Message: CustomStringConvertible {
     
     /// The available message types.
     enum MessageType {
-        case Statement, Joke, QuestionBool, QuestionWhy
+        case statement, joke, questionBool, questionWhy
     }
     
     var description: String {

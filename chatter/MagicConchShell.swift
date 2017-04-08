@@ -17,45 +17,45 @@ class MagicConchShell: Chatter {
     
     override func nextMessage() -> Message {
     return [
-            Message(content: "Ask me a question.", type: .Statement),
-            Message(content: "", type: .Statement),
-            Message(content: "", type: .QuestionBool),
-            Message(content: "", type: .QuestionWhy),
+            Message(content: "Ask me a question.", type: .statement),
+            Message(content: "", type: .statement),
+            Message(content: "", type: .questionBool),
+            Message(content: "", type: .questionWhy),
             ].randomElement()
     }
     
-    override func responseForMessage(message: Message) -> Message {
+    override func responseForMessage(_ message: Message) -> Message {
         switch message.type {
             
-        case .Statement:
+        case .statement:
             return[
                 
-                Message(content: "No.", type: .Statement),
-                Message(content: "Yes.", type: .Statement),
-                Message(content: "I don't think so.", type: .Statement),
+                Message(content: "No.", type: .statement),
+                Message(content: "Yes.", type: .statement),
+                Message(content: "I don't think so.", type: .statement),
                 ].randomElement()
             
-        case .QuestionBool:
+        case .questionBool:
             return[
                 
-                Message(content: "No.", type: .Statement),
-                Message(content: "Yes.", type: .Statement),
-                Message(content: "Maybe someday.", type: .Statement),
-                Message(content: "Try asking again.", type: .Statement),
-                Message(content: "I don't think so.", type: .Statement),
+                Message(content: "No.", type: .statement),
+                Message(content: "Yes.", type: .statement),
+                Message(content: "Maybe someday.", type: .statement),
+                Message(content: "Try asking again.", type: .statement),
+                Message(content: "I don't think so.", type: .statement),
                 ].randomElement()
             
-        case .QuestionWhy:
+        case .questionWhy:
             return[
                 
-                Message(content: "Try asking again.", type: .Statement),
+                Message(content: "Try asking again.", type: .statement),
                 ].randomElement()
             
-        case .Joke:
+        case .joke:
             return[
                 
-                Message(content: "Try joking again.", type: .Joke),
-                Message(content: "No.", type: .Statement),
+                Message(content: "Try joking again.", type: .joke),
+                Message(content: "No.", type: .statement),
                 ].randomElement()
         }
     }

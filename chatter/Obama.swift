@@ -15,42 +15,42 @@ class Obama: Chatter {
         super.init(image: UIImage(named: "obama"))
     }
     
-    override func responseForMessage(message: Message) -> Message {
+    override func responseForMessage(_ message: Message) -> Message {
         switch message.type {
         
-        case .Statement:
+        case .statement:
             return [
-                Message(content: "What did that have anything to do with what I said?", type: .QuestionWhy),
-                Message(content: "You, sir, are a weird person", type: .Statement),
-                Message(content: "One day, Humans will land on Mars.", type: .Statement),
-                Message(content: "I like your personality", type: .Statement),
+                Message(content: "What did that have anything to do with what I said?", type: .questionWhy),
+                Message(content: "You, sir, are a weird person", type: .statement),
+                Message(content: "One day, Humans will land on Mars.", type: .statement),
+                Message(content: "I like your personality", type: .statement),
                 ].randomElement();
             
-        case .QuestionBool:
+        case .questionBool:
             return [
-                Message(content: "Yes, sir", type: .Statement),
-                Message(content: "Why are you asking?", type: .QuestionWhy),
-                Message(content: "Negative.", type: .QuestionWhy),
-                Message(content: "After consulting my advisor on that issue I can say yes, sir.", type: .Statement)
+                Message(content: "Yes, sir", type: .statement),
+                Message(content: "Why are you asking?", type: .questionWhy),
+                Message(content: "Negative.", type: .questionWhy),
+                Message(content: "After consulting my advisor on that issue I can say yes, sir.", type: .statement)
                 ].randomElement();
             
-        case .QuestionWhy:
+        case .questionWhy:
             return [
                 
-                Message(content: "Why? What? Where? How? ... Whatever my answer is, you won't find it satisfying", type: .Statement),
-                Message(content: "Because I said so", type: .Statement),
-                Message(content: "Are you kidding me?", type: .Joke),
-                Message(content: "Because that's what it takes to be a ", type: .Statement),
-                Message(content: "I'm afraid that's a classified information", type: .Statement),
+                Message(content: "Why? What? Where? How? ... Whatever my answer is, you won't find it satisfying", type: .statement),
+                Message(content: "Because I said so", type: .statement),
+                Message(content: "Are you kidding me?", type: .joke),
+                Message(content: "Because that's what it takes to be a ", type: .statement),
+                Message(content: "I'm afraid that's a classified information", type: .statement),
                 ].randomElement();
             
-        case .Joke:
+        case .joke:
             return [
-                Message(content: "That, sir, deserves an Obama lol", type: .Statement),
-                Message(content: "Sorry to disappoint you, but coming from you, that joke of yours sounds silly", type: .Statement),
-                Message(content: "I heard funnier jokes, but that one will pass", type: .Statement),
-                Message(content: "There was a time when people used to be funny... What happened?", type: .QuestionWhy),
-                Message(content: "Funny guy! You sir, deserve a cookie!", type: .Statement)
+                Message(content: "That, sir, deserves an Obama lol", type: .statement),
+                Message(content: "Sorry to disappoint you, but coming from you, that joke of yours sounds silly", type: .statement),
+                Message(content: "I heard funnier jokes, but that one will pass", type: .statement),
+                Message(content: "There was a time when people used to be funny... What happened?", type: .questionWhy),
+                Message(content: "Funny guy! You sir, deserve a cookie!", type: .statement)
             ].randomElement()
         }
         
@@ -60,12 +60,12 @@ class Obama: Chatter {
     
     override func nextMessage() -> Message {
         return [
-        Message(content: "I think enyone can be a leader!", type: .Statement),
-        Message(content: "Do you want to hear a joke? Trump", type: .Joke),
-        Message(content: "What do you think about my airplane?", type: .QuestionWhy),
-        Message(content: "Do you think there are aliens somewhere?", type: .QuestionBool),
-        Message(content: "I think pinguins are pretty", type: .Statement),
-        Message(content: "I am a big fan of controversies", type: .Statement),
+        Message(content: "I think enyone can be a leader!", type: .statement),
+        Message(content: "Do you want to hear a joke? Trump", type: .joke),
+        Message(content: "What do you think about my airplane?", type: .questionWhy),
+        Message(content: "Do you think there are aliens somewhere?", type: .questionBool),
+        Message(content: "I think pinguins are pretty", type: .statement),
+        Message(content: "I am a big fan of controversies", type: .statement),
         
         ].randomElement()
     }

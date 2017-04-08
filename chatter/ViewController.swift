@@ -10,19 +10,19 @@ import UIKit
 
 
 enum Side: CustomStringConvertible {
-    case Left, Right
+    case left, right
     
     var description: String {
         switch self {
-        case .Left: return "left"
-        case .Right: return "right"
+        case .left: return "left"
+        case .right: return "right"
         }
     }
     
     var nextSide: Side {
         switch self {
-        case .Left: return .Right
-        case .Right: return .Left
+        case .left: return .right
+        case .right: return .left
         }
     }
 }
@@ -47,43 +47,43 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.leftChatterButton.imageView?.contentMode = .ScaleAspectFit
-        self.rightChatterButton.imageView?.contentMode = .ScaleAspectFit
+        self.leftChatterButton.imageView?.contentMode = .scaleAspectFit
+        self.rightChatterButton.imageView?.contentMode = .scaleAspectFit
 
-        self.chatterButtons = [ .Left: self.leftChatterButton, .Right: self.rightChatterButton ]
+        self.chatterButtons = [ .left: self.leftChatterButton, .right: self.rightChatterButton ]
         
-        self.configureButtonOnSide(.Left)
-        self.configureButtonOnSide(.Right)
+        self.configureButton(onSide: .left)
+        self.configureButton(onSide: .right)
     }
     
     
     // MARK: View Configuration
 
-    private func configureButtonOnSide(side: Side) {
+    private func configureButton(onSide side: Side) {
         if let chatterButton: UIButton = self.chatterButtons[side] {
             if let chatter = chatters[side] {
-                chatterButton.setTitle(chatter.image == nil ? chatter.name : nil, forState: .Normal)
-                chatterButton.setImage(chatter.image, forState: .Normal)
+                chatterButton.setTitle(chatter.image == nil ? chatter.name : nil, for: .normal)
+                chatterButton.setImage(chatter.image, for: .normal)
             } else {
-                chatterButton.setTitle("Select \(side) Chatter", forState: .Normal)
-                chatterButton.setImage(nil, forState: .Normal)
+                chatterButton.setTitle("Select \(side) Chatter", for: .normal)
+                chatterButton.setImage(nil, for: .normal)
             }
         }
     }
     
     private func reset() {
         self.chatViewController.reset()
-        self.activeSide = .Left
+        self.activeSide = .left
         self.lastMessage = nil
     }
     
     
     // MARK: User Interaction
     
-    private var activeSide: Side = .Left
+    private var activeSide: Side = .left
     private var lastMessage: Message?
     
-    @IBAction func chatButtonPressed(sender: AnyObject) {
+    @IBAction func chatButtonPressed(_ sender: AnyObject) {
         if let chatter = chatters[activeSide] {
             if let lastMessage = lastMessage {
                 let response = chatter.responseForMessage(lastMessage)
@@ -95,39 +95,39 @@ class ViewController: UIViewController {
             self.lastMessage = message
             activeSide = activeSide.nextSide
         } else {
-            let alertController = UIAlertController(title: "Select a \(activeSide) Chatter", message: nil, preferredStyle: .Alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            self.presentViewController(alertController, animated: true, completion: nil)
+            let alertController = UIAlertController(title: "Select a \(activeSide) Chatter", message: nil, preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alertController, animated: true, completion: nil)
         }
     }
 
-    @IBAction func selectChatterButtonPressed(sender: UIButton) {
-        let alertController = UIAlertController(title: "Enter a Chatter class name:", message: nil, preferredStyle: .Alert)
-        alertController.addTextFieldWithConfigurationHandler { textField in
+    @IBAction func selectChatterButtonPressed(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Enter a Chatter class name:", message: nil, preferredStyle: .alert)
+        alertController.addTextField { textField in
             textField.placeholder = "Chatter class name"
         }
-        alertController.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
-        alertController.addAction(UIAlertAction(title: "Set Chatter", style: .Default, handler: { action in
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Set Chatter", style: .default, handler: { action in
             guard let chatterClassName = alertController.textFields?.first?.text else {
                 return
             }
-            if let chatter = (NSBundle.mainBundle().classNamed("chatter." + chatterClassName) as? Chatter.Type)?.init() {
-                let side: Side = sender === self.leftChatterButton ? .Left : .Right
+            if let chatter = (Bundle.main.classNamed("chatter." + chatterClassName) as? Chatter.Type)?.init() {
+                let side: Side = sender === self.leftChatterButton ? .left : .right
                 self.chatters[side] = chatter
-                self.configureButtonOnSide(side)
+                self.configureButton(onSide: side)
                 self.reset()
             } else {
-                let errorAlertController = UIAlertController(title: "Unable to load Class", message: "There is no class '\(chatterClassName)' or it's not a Chatter subclass.", preferredStyle: .Alert)
-                errorAlertController.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
-                self.presentViewController(errorAlertController, animated: true, completion: nil)
+                let errorAlertController = UIAlertController(title: "Unable to load Class", message: "There is no class '\(chatterClassName)' or it's not a Chatter subclass.", preferredStyle: .alert)
+                errorAlertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+                self.present(errorAlertController, animated: true, completion: nil)
             }
         }))
-        self.presentViewController(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if let identifier = segue.identifier where identifier == "embedChat" {
-            self.chatViewController = segue.destinationViewController as! ChatViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let identifier = segue.identifier, identifier == "embedChat" {
+            self.chatViewController = segue.destination as! ChatViewController
         }
     }
     

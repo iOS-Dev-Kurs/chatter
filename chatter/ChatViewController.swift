@@ -24,12 +24,12 @@ class ChatViewController: UITableViewController {
     
     // MARK: Public Interface
     
-    func presentMessage(message: Message, onSide side: Side) {
+    func presentMessage(_ message: Message, onSide side: Side) {
         self.chatBubbles.append(ChatBubble(message: message, side: side))
         self.tableView.beginUpdates()
-        self.tableView.insertRowsAtIndexPaths([ NSIndexPath(forRow: self.tableView.numberOfRowsInSection(0), inSection: 0) ], withRowAnimation: .Fade)
+        self.tableView.insertRows(at: [ IndexPath(row: self.tableView.numberOfRows(inSection: 0), section: 0) ], with: .fade)
         self.tableView.endUpdates()
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1000), dispatch_get_main_queue()) { () -> Void in
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(1000) / Double(NSEC_PER_SEC)) { () -> Void in
             self.scrollToBottom(true)
         }
     }
@@ -52,17 +52,17 @@ class ChatViewController: UITableViewController {
     
     // MARK: Table View Datasource
     
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chatBubbles.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chatBubble = chatBubbles[indexPath.row]
-        let cell = tableView.dequeueReusableCellWithIdentifier(chatBubble.side == .Left ? "leftChatBubble" : "rightChatBubble", forIndexPath: indexPath) as! ChatBubbleCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: chatBubble.side == .left ? "leftChatBubble" : "rightChatBubble", for: indexPath) as! ChatBubbleCell
         cell.textView.text = chatBubble.message.content
         return cell
     }
@@ -79,10 +79,10 @@ return size.height + 20.0f;
 
     // MARK: View Configuration
     
-    func scrollToBottom(animated: Bool = true) {
-        let bottomRow = self.tableView.numberOfRowsInSection(0) - 1
+    func scrollToBottom(_ animated: Bool = true) {
+        let bottomRow = self.tableView.numberOfRows(inSection: 0) - 1
         if bottomRow >= 0 {
-            self.tableView.scrollToRowAtIndexPath(NSIndexPath(forRow: bottomRow, inSection: 0), atScrollPosition: .Bottom, animated: animated)
+            self.tableView.scrollToRow(at: IndexPath(row: bottomRow, section: 0), at: .bottom, animated: animated)
         }
     }
 

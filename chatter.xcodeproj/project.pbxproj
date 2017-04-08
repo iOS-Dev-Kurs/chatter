@@ -31,9 +31,9 @@
 		9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCCE6CC1CD3457F0074771D /* Sheldon.swift */; };
 		A016F8D41CCE76A80039184B /* Nathan.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016F8D31CCE76A80039184B /* Nathan.swift */; };
 		A2AB56621CD35B40006999FD /* Homer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2AB56611CD35B40006999FD /* Homer.swift */; };
+		BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A90421CD6C5A00033DBD8 /* Batman.swift */; };
 		DC161D081CD60CE7001ADBC4 /* Seneca.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC161D071CD60CE7001ADBC4 /* Seneca.swift */; };
 		E9DD170D1CD6C2DA004F614F /* MagicConchShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */; };
-		BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5A90421CD6C5A00033DBD8 /* Batman.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,9 +65,9 @@
 		9DCCE6CC1CD3457F0074771D /* Sheldon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sheldon.swift; sourceTree = "<group>"; };
 		A016F8D31CCE76A80039184B /* Nathan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nathan.swift; sourceTree = "<group>"; };
 		A2AB56611CD35B40006999FD /* Homer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homer.swift; sourceTree = "<group>"; };
+		BF5A90421CD6C5A00033DBD8 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
 		DC161D071CD60CE7001ADBC4 /* Seneca.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seneca.swift; sourceTree = "<group>"; };
 		E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MagicConchShell.swift; sourceTree = "<group>"; };
-		BF5A90421CD6C5A00033DBD8 /* Batman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Batman.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,7 +218,7 @@
 				ORGANIZATIONNAME = "Universität Heidelberg";
 				TargetAttributes = {
 					8739C1B8191C1203009C7B3B = {
-						DevelopmentTeam = 5NV62CF7F7;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -359,12 +359,14 @@
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.ios-dev-kurs.chatter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,11 +378,13 @@
 				CLANG_ENABLE_MODULE_DEBUGGING = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "chatter/chatter-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "de.uni-hd.ios-dev-kurs.chatter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

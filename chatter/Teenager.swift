@@ -16,42 +16,42 @@ class Teenager : Chatter{
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "Are you gay?", type: .QuestionBool),
-            Message(content: "Do your parents h8 u?", type: .QuestionBool),
-            Message(content: "Where are your balls?", type: .QuestionBool),
-            Message(content: "Your mum runs left at Super Mario", type: .Statement),
-            Message(content: "Get rekt, boosted fgt", type: .Statement),
-            Message(content: "Get cancer", type: .Statement),
+            Message(content: "Are you gay?", type: .questionBool),
+            Message(content: "Do your parents h8 u?", type: .questionBool),
+            Message(content: "Where are your balls?", type: .questionBool),
+            Message(content: "Your mum runs left at Super Mario", type: .statement),
+            Message(content: "Get rekt, boosted fgt", type: .statement),
+            Message(content: "Get cancer", type: .statement),
             
             
             ].randomElement()
     }
     
-    override func responseForMessage(message: Message) -> Message {
+    override func responseForMessage(_ message: Message) -> Message {
         switch message.type {
-        case .Statement:
+        case .statement:
             return [
-                Message(content: "What?", type: .QuestionBool),
-                Message(content: "get rekt", type: .Statement),
-                Message(content: "I h8 you", type: .Statement),
-                Message(content: "fgt", type: .Statement)
+                Message(content: "What?", type: .questionBool),
+                Message(content: "get rekt", type: .statement),
+                Message(content: "I h8 you", type: .statement),
+                Message(content: "fgt", type: .statement)
                 ].randomElement()
-        case .QuestionBool:
+        case .questionBool:
             return [
-                Message(content: "Why do you try so hard?", type: .QuestionWhy),
-                Message(content: "get rekt", type: .Statement),
-                Message(content: "lol, you`re childish", type: .Statement),
+                Message(content: "Why do you try so hard?", type: .questionWhy),
+                Message(content: "get rekt", type: .statement),
+                Message(content: "lol, you`re childish", type: .statement),
                 ].randomElement()
-        case .QuestionWhy:
+        case .questionWhy:
             return [
-                Message(content: "Why is your nose so big?", type: .QuestionWhy),
-                Message(content: "fgt", type: .Statement),
-                Message(content: "I don`t care", type: .Statement)
+                Message(content: "Why is your nose so big?", type: .questionWhy),
+                Message(content: "fgt", type: .statement),
+                Message(content: "I don`t care", type: .statement)
                 ].randomElement()
-        case .Joke:
+        case .joke:
             return [
-                Message(content: "Omg not funny", type: .Statement),
-                Message(content: "You are a joke", type: .Statement)
+                Message(content: "Omg not funny", type: .statement),
+                Message(content: "You are a joke", type: .statement)
                 ].randomElement()
         }
     }

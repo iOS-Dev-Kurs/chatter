@@ -16,34 +16,34 @@ class Batman: Chatter {
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "Batman", type: .Statement),
-            Message(content: "Batwayne", type: .Statement),
-            Message(content: "Na Na Na Na Na Na Na Na ....", type: .Statement),
+            Message(content: "Batman", type: .statement),
+            Message(content: "Batwayne", type: .statement),
+            Message(content: "Na Na Na Na Na Na Na Na ....", type: .statement),
             ].randomElement()
     }
     
-    override func responseForMessage(message: Message) -> Message {
+    override func responseForMessage(_ message: Message) -> Message {
         switch message.type{
-        case.Joke:
+        case.joke:
             return[
-                Message(content: "I'm Batwayne!", type: .Statement),
-                Message(content: "All jokes aside, WHERE ARE THEY?", type: .QuestionWhy)
+                Message(content: "I'm Batwayne!", type: .statement),
+                Message(content: "All jokes aside, WHERE ARE THEY?", type: .questionWhy)
                 ].randomElement()
-        case.QuestionBool:
-            return Message(content: "Because I'm Batman.", type: .Statement)
-        case.QuestionWhy:
+        case.questionBool:
+            return Message(content: "Because I'm Batman.", type: .statement)
+        case.questionWhy:
             return[
-                Message(content: "I'm Batman!", type: .Statement),
-                Message(content: "Let me ask my BatComputer.", type: .Statement),
-                Message(content: "Because bats frighten me.", type: .Statement),
-                Message(content: "So we can learn to pick ourselves up again.", type: .Statement)
+                Message(content: "I'm Batman!", type: .statement),
+                Message(content: "Let me ask my BatComputer.", type: .statement),
+                Message(content: "Because bats frighten me.", type: .statement),
+                Message(content: "So we can learn to pick ourselves up again.", type: .statement)
                 ].randomElement()
-        case.Statement:
+        case.statement:
             return [
-                Message(content: "Save me Superman.", type: .Statement),
-                Message(content: "I won’t kill you, but I don’t I have to save you.", type: .Statement),
-                Message(content: "It's not who I am underneath, but what I do that defines me.", type: .Statement),
-                Message(content: "A hero can be anyone, even a man doing something as simple and reassuring as putting a coat on a young boy’s shoulders to let him know the world hadn’t ended.", type: .Statement)
+                Message(content: "Save me Superman.", type: .statement),
+                Message(content: "I won’t kill you, but I don’t I have to save you.", type: .statement),
+                Message(content: "It's not who I am underneath, but what I do that defines me.", type: .statement),
+                Message(content: "A hero can be anyone, even a man doing something as simple and reassuring as putting a coat on a young boy’s shoulders to let him know the world hadn’t ended.", type: .statement)
                 ].randomElement()
         }
     }

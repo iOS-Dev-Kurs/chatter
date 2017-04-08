@@ -17,33 +17,33 @@ class Redneck: Chatter {
 	
 	override func nextMessage() -> Message {
 		switch counter {
-			case 0: return Message(content: "They took our jobs!", type: .Statement)
-			case 1: return Message(content: "They took our jobs!!!!!!!", type: .Statement)
-			case 2: return Message(content: "They tuk r jaaaaabs!!!!!", type: .Statement)
-			case 3: return Message(content: "Te-tukr jeeeeeeeerbs!!!!!", type: .Statement)
-			case 4...100: return Message(content: "Te-tkr-geeeeeeeerbs!!!!!", type: .Statement)
-		default: return Message(content: "They took our jobs.", type: .Statement)
+			case 0: return Message(content: "They took our jobs!", type: .statement)
+			case 1: return Message(content: "They took our jobs!!!!!!!", type: .statement)
+			case 2: return Message(content: "They tuk r jaaaaabs!!!!!", type: .statement)
+			case 3: return Message(content: "Te-tukr jeeeeeeeerbs!!!!!", type: .statement)
+			case 4...100: return Message(content: "Te-tkr-geeeeeeeerbs!!!!!", type: .statement)
+		default: return Message(content: "They took our jobs.", type: .statement)
 		}
 	}
 	
-		override func responseForMessage(message: Message) -> Message {
+		override func responseForMessage(_ message: Message) -> Message {
 			if (message.content == "Make America great again!") {
 				counter=0
-				return Message(content: "All hail Donald Trump, he'll get them.", type: .Statement)
+				return Message(content: "All hail Donald Trump, he'll get them.", type: .statement)
 			}
-			if (message.type == .Statement) {
+			if (message.type == .statement) {
 				counter+=1
 				return [
-					Message(content: "Ah tell ya' boy!!!", type: .Statement),
-					Message(content: "Whut", type: .QuestionWhy),
-					Message(content: "Thanks Obama!!", type: .Statement),
+					Message(content: "Ah tell ya' boy!!!", type: .statement),
+					Message(content: "Whut", type: .questionWhy),
+					Message(content: "Thanks Obama!!", type: .statement),
 				].randomElement()
 			}
-			if (message.type == .Joke) {
+			if (message.type == .joke) {
 				counter+=2
-				return Message(content: "You think this' funny?!! Ah tell ya what ain't funny:", type: .Statement)
+				return Message(content: "You think this' funny?!! Ah tell ya what ain't funny:", type: .statement)
 			}
-			return Message(content: "No, cause…", type: .Statement)
+			return Message(content: "No, cause…", type: .statement)
 		}
 	
 }

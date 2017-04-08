@@ -17,15 +17,15 @@ class Zocker: Chatter {
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "Why don't they kick him?! He's such a cheater!", type: .QuestionBool),
-            Message(content: "Do you use the internet? I loose all the time", type: .QuestionBool),
-            Message(content: "Real gamer do not clean up, they defragment", type: .Joke),
-            Message(content: "Yeah, I got it!!", type: .Statement),
-            Message(content: "...", type: .Statement),
-            Message(content: "Look, this is it!", type: .Statement),
-            Message(content: "I won't play this $@!/ing game anymore!", type: .Statement),
-            Message(content: "Get Nintendo or change the system...", type: .Joke),
-            Message(content: "I'll jump out of this windows!!", type: .Statement)
+            Message(content: "Why don't they kick him?! He's such a cheater!", type: .questionBool),
+            Message(content: "Do you use the internet? I loose all the time", type: .questionBool),
+            Message(content: "Real gamer do not clean up, they defragment", type: .joke),
+            Message(content: "Yeah, I got it!!", type: .statement),
+            Message(content: "...", type: .statement),
+            Message(content: "Look, this is it!", type: .statement),
+            Message(content: "I won't play this $@!/ing game anymore!", type: .statement),
+            Message(content: "Get Nintendo or change the system...", type: .joke),
+            Message(content: "I'll jump out of this windows!!", type: .statement)
             
         ].randomElement()
     
@@ -33,40 +33,40 @@ class Zocker: Chatter {
     
     var angry = 0
     
-    override func responseForMessage(message: Message) -> Message {
+    override func responseForMessage(_ message: Message) -> Message {
         switch message.type {
-        case .QuestionWhy:
+        case .questionWhy:
 //            zählt die WhyFragen, Antworten werden immer genervter
             switch angry {
             case 0:
                 angry += 1
-                return Message(content: "That's no big deal. What a bit.", type: .Statement)
+                return Message(content: "That's no big deal. What a bit.", type: .statement)
             case 1:
                 angry += 1
-                return Message(content: "What's your idea?", type: .QuestionWhy)
+                return Message(content: "What's your idea?", type: .questionWhy)
             case 2:
                 angry += 1
-                return Message(content: "Are you serious?", type: .QuestionBool)
+                return Message(content: "Are you serious?", type: .questionBool)
             case 3:
                 angry += 1
-                return Message(content: "This does not interest me at all", type: .Statement)
+                return Message(content: "This does not interest me at all", type: .statement)
             case 4:
                 angry += 1
-                return Message(content: "Shut up!! I have to concentrate!", type: .Statement)
+                return Message(content: "Shut up!! I have to concentrate!", type: .statement)
             default:
                 angry = 0
-                return Message(content: "Talk to my Hand!!", type: .Statement)
+                return Message(content: "Talk to my Hand!!", type: .statement)
         }
-        case .QuestionBool:
+        case .questionBool:
             return [
-                Message(content: "No", type: .Statement),
-                Message(content: "Do you?", type: .QuestionBool),
-                Message(content: "What do you mean?", type: .QuestionBool)
+                Message(content: "No", type: .statement),
+                Message(content: "Do you?", type: .questionBool),
+                Message(content: "What do you mean?", type: .questionBool)
             ].randomElement()
-        case .Statement:
-            return Message(content: "...", type: .Statement)
-        case .Joke:
-            return Message(content: "I already knew this one..", type: .Statement)
+        case .statement:
+            return Message(content: "...", type: .statement)
+        case .joke:
+            return Message(content: "I already knew this one..", type: .statement)
         }
         
     }
