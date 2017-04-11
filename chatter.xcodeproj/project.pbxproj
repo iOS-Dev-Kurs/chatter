@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D55A5DE1E9CD11E00CD1B41 /* IronMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D55A5DD1E9CD11E00CD1B41 /* IronMan.swift */; };
 		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
 		3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A1351CD3FD4500A5DD4F /* Minion.swift */; };
 		3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A13B1CD4010200A5DD4F /* Barney.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D55A5DD1E9CD11E00CD1B41 /* IronMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IronMan.swift; sourceTree = "<group>"; };
 		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
 		3284A1351CD3FD4500A5DD4F /* Minion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minion.swift; sourceTree = "<group>"; };
 		3284A13B1CD4010200A5DD4F /* Barney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barney.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				87468FD61CCD3B3500DB4A03 /* Yoda.swift */,
+				0D55A5DD1E9CD11E00CD1B41 /* IronMan.swift */,
 				DC161D071CD60CE7001ADBC4 /* Seneca.swift */,
 				A016F8D31CCE76A80039184B /* Nathan.swift */,
 				1716AF9E1CCE8A7600264EBE /* Obama.swift */,
@@ -276,6 +279,7 @@
 				3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */,
 				9DCCE6CD1CD3457F0074771D /* Sheldon.swift in Sources */,
 				87DC34E61CEA18A000AC0EE6 /* Teenager.swift in Sources */,
+				0D55A5DE1E9CD11E00CD1B41 /* IronMan.swift in Sources */,
 				3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */,
 				79A8A7631CD0072100C7A040 /* Sherlock.swift in Sources */,
 				879EC5451AF29DC200F36F1C /* ViewController.swift in Sources */,
