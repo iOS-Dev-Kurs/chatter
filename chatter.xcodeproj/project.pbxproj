@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1716AF9F1CCE8A7600264EBE /* Obama.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1716AF9E1CCE8A7600264EBE /* Obama.swift */; };
+		1763B3CB1E9CCD1500FF0B0D /* Merkel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763B3CA1E9CCD1500FF0B0D /* Merkel.swift */; };
 		3284A1361CD3FD4500A5DD4F /* Minion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A1351CD3FD4500A5DD4F /* Minion.swift */; };
 		3284A13C1CD4010200A5DD4F /* Barney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3284A13B1CD4010200A5DD4F /* Barney.swift */; };
 		7730A5321CD6614B0064B499 /* Redneck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7730A5311CD6614B0064B499 /* Redneck.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		1716AF9E1CCE8A7600264EBE /* Obama.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Obama.swift; sourceTree = "<group>"; };
+		1763B3CA1E9CCD1500FF0B0D /* Merkel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merkel.swift; sourceTree = "<group>"; };
 		3284A1351CD3FD4500A5DD4F /* Minion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minion.swift; sourceTree = "<group>"; };
 		3284A13B1CD4010200A5DD4F /* Barney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Barney.swift; sourceTree = "<group>"; };
 		7730A5311CD6614B0064B499 /* Redneck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Redneck.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				E9DD170C1CD6C2DA004F614F /* MagicConchShell.swift */,
 				BF5A90421CD6C5A00033DBD8 /* Batman.swift */,
 				8393795A1CD11B9D00E786E8 /* Zocker.swift */,
+				1763B3CA1E9CCD1500FF0B0D /* Merkel.swift */,
 			);
 			name = Chatters;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				879EC5111AF2952E00F36F1C /* AppDelegate.swift in Sources */,
 				9D20C80A1CD3BE9400C54F73 /* StarTrek.swift in Sources */,
 				A2AB56621CD35B40006999FD /* Homer.swift in Sources */,
+				1763B3CB1E9CCD1500FF0B0D /* Merkel.swift in Sources */,
 				7730A5321CD6614B0064B499 /* Redneck.swift in Sources */,
 				77989E4A1CCFDB1000AB13A3 /* Hodor.swift in Sources */,
 				BF5A90431CD6C5A00033DBD8 /* Batman.swift in Sources */,
