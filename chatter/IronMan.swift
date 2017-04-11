@@ -17,7 +17,7 @@ class IronMan : Chatter{
     
     override func nextMessage() -> Message {
         return [
-            Message(content: "How'd you solve the icing problem?", type: .questionBool),
+            Message(content: "How'd you solve the icing problem?", type: .questionWhy),
             Message(content: "It's your birthday?", type: .questionBool),
             Message(content: "What is the point of owning a race car if you can't drive it?", type: .questionBool),
             Message(content: "What are you trying to get rid of me for? You got plans?", type: .questionBool),
@@ -36,7 +36,7 @@ class IronMan : Chatter{
                 Message(content: "Iron Man. That's kind of catchy. It's got a nice ring to it.", type: .statement),
                 Message(content: "Yeah...okay.", type: .statement),
                 Message(content: "I'm a huge fan of the way you lose control and turn into an enourmous green rage monster.", type: .statement),
-                Message(content: "Yeah? And?", type: .questionBool),
+                Message(content: "Yeah? And?", type: .questionWhy),
                 Message(content: "👍", type: .statement)
                 ].randomElement()
         case .questionBool:
@@ -60,7 +60,7 @@ class IronMan : Chatter{
             
         case .joke:
             return [
-                Message(content: "Yeah well vacation's over.", type: .questionBool),
+                Message(content: "Yeah well vacation's over.", type: .statement),
                 Message(content: "Hihihi", type: .statement),
                 Message(content: "Good one 😉", type: .statement),
                 Message(content: "😀😀", type: .statement)
